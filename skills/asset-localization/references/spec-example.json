@@ -1,0 +1,28 @@
+{
+  "revision": "v001",
+  "source_pixels_used": false,
+  "source_alpha_copied": false,
+  "processing_files": [],
+  "layers_bottom_to_top": [
+    {
+      "id": "L0_art",
+      "name": "L0 그림",
+      "file": "prepared-art.png",
+      "generation_ids": ["call-001"],
+      "processing": [{"operation": "none", "reason": "Already positioned on full canvas; replace with actual recipe"}],
+      "opacity": 255,
+      "visible": true,
+      "blend_mode": "normal"
+    },
+    {
+      "id": "L2_text_ko",
+      "name": "L2 한글 글씨",
+      "file": "prepared-text.png",
+      "generation_ids": ["call-002"],
+      "processing": [{"operation": "none", "reason": "Already positioned on full canvas; replace with actual recipe"}],
+      "opacity": 255,
+      "visible": true,
+      "blend_mode": "normal"
+    }
+  ]
+}

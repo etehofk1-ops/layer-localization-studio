@@ -1,0 +1,24 @@
+{
+  "translation": {"text": "공격 후", "source": "Example only: replace with project glossary or approved wording"},
+  "reviewed_by": "",
+  "viewed_on_dark_and_light": false,
+  "layers_bottom_to_top": [
+    {
+      "name": "L0_art",
+      "role": "art",
+      "evidence": "Describe visible structure; this is an inferred layer, not an extracted PSD layer",
+      "confidence": "medium",
+      "colors": [],
+      "bbox_px": null,
+      "stroke_width_px": null,
+      "opacity": null,
+      "effect_parameters": {},
+      "action": "generate"
+    }
+  ],
+  "planned_generation_calls": 2,
+  "retry_budget": 1,
+  "unresolved_observations": [],
+  "source_pixel_cutout_allowed": false,
+  "source_alpha_inheritance_allowed": false
+}

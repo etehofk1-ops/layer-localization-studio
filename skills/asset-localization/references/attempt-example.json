@@ -1,0 +1,11 @@
+{
+  "id": "call-001",
+  "kind": "generation",
+  "backend": "Record the actual tool and model when known",
+  "prompt": "Replace with the exact prompt sent to the image generation tool.",
+  "references": ["source.png"],
+  "output": "generated-art.png",
+  "outcome": "candidate",
+  "retry_of": null,
+  "notes": "Record observable defects, selection rationale, and external output ID if available."
+}

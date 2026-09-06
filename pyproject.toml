@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layer-localization-studio"
+version = "0.1.0"
+description = "Analysis-first, traceable game UI asset localization workflow"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["Pillow==12.3.0", "psd-tools[composite]==1.18.0"]
+
+[project.scripts]
+layer-studio = "layer_studio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
