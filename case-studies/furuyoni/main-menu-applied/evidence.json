@@ -1,0 +1,54 @@
+{
+  "classification": "SUCCESS_VISIBLE_IN_GAME_UI",
+  "evidence_source": "User-provided original/applied screenshot pair in this project conversation",
+  "user_description": "원본이랑 한글패치 적용한거야",
+  "capture_date": null,
+  "capture_date_note": "Exact capture date not independently established",
+  "visible_localized_labels": [
+    "찬란한 결투",
+    "무신의 길",
+    "아마네 도장",
+    "이계 신사",
+    "프로필",
+    "규칙",
+    "리플레이",
+    "설정",
+    "종료"
+  ],
+  "reviewed_date": "2026-09-07",
+  "reviewed_by": "Codex direct visual inspection",
+  "success_scope": "Visible Korean labels, their placement, and legibility in the supplied applied game screen",
+  "new_game_run": false,
+  "new_generation_calls": 0,
+  "not_established": [
+    "Every hover/disabled state",
+    "All game screens",
+    "Exact sprite/PSD lineage for this screenshot",
+    "Current portable CLI generated this result"
+  ],
+  "screenshot_pair_notes": [
+    "Different player avatars are visible; the comparison concerns menu labels, not that avatar change."
+  ],
+  "files": [
+    {
+      "file": "before.png",
+      "bytes": 3138340,
+      "sha256": "c3ef5fc407af897a810f5b02303fc8339fc1f334f1e202473d1faca0234ef533",
+      "size_px": [
+        1919,
+        1079
+      ],
+      "source_bytes_identical": true
+    },
+    {
+      "file": "after.png",
+      "bytes": 3140826,
+      "sha256": "60eff22394b35698099a8b57f67a871ef676d57626055c4467c0e611f0341d92",
+      "size_px": [
+        1919,
+        1079
+      ],
+      "source_bytes_identical": true
+    }
+  ]
+}

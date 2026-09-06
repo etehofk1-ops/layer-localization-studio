@@ -8,7 +8,7 @@
 
 | 구성 | 역할 |
 | --- | --- |
-| [실제 제작 사례 3종](case-studies/README.md) | 원본/후보 비교, 분리 레이어, PSD, 생성 원본·실패·재시도와 검수 결과 |
+| [성공 사례와 제작 실험](case-studies/README.md) | 적용 성공 2건의 실제 화면·QA와 제작 실험 3종의 레이어·PSD·생성 이력 |
 | [제작 스킬](skills/asset-localization/SKILL.md) | 분석·생성·후처리·검수의 순서와 판단 기준 |
 | [JSON 예시](skills/asset-localization/references/) | 레이어 분석, 생성 시도, 조립 스펙 |
 | `layer-studio` CLI | 원본 복사, 분석 통계, 생성물 보관, PNG·PSD 출력, 무결성 검사 |
@@ -18,13 +18,15 @@
 
 이미지 생성은 에이전트가 사용 가능한 생성 도구로 수행합니다. CLI가 모델을 호출하거나 자동으로 번역·레이어를 추론하지는 않습니다. 사용자가 요청한 실제 사례는 `case-studies/furuyoni/`에 별도 권리 표시와 함께 보관합니다. 전체 게임 파일과 번역 데이터베이스는 포함하지 않습니다.
 
-## 실제 사례: 찬란한 결투
+## 성공 사례: 실제 게임에 적용한 메인 메뉴
 
-[![Radiant Duels 원본과 찬란한 결투 시험 후보](case-studies/furuyoni/radiant-duels/통합에셋/미리보기.png)](case-studies/furuyoni/radiant-duels/README.md)
+[![한글패치가 적용된 실제 메인 메뉴](case-studies/furuyoni/main-menu-applied/after.png)](case-studies/furuyoni/main-menu-applied/README.md)
 
-7개 레이어, 캐릭터 페이드 마스크, 기본 생성 5회와 재시도 2회를 사용한 메뉴 제작 사례입니다. **원본 일치 기준에 미달한 시험 후보**이며 게임 적용본은 아닙니다. 과정과 실패 이유를 포함해 [원본·레이어·PSD·생성 기록을 확인할 수 있습니다](case-studies/furuyoni/radiant-duels/README.md).
+사용자가 제공한 패치 적용 전후 화면에서 **찬란한 결투·무신의 길·아마네 도장·이계 신사·프로필·규칙·리플레이·설정·종료**가 한국어로 표시된 결과를 확인할 수 있습니다. [원본과 적용 화면 비교](case-studies/furuyoni/main-menu-applied/README.md)
 
-[공격후: 원형 아트와 발광](case-studies/furuyoni/after-attack/README.md) · [동결: 색상과 숨은 RGB 분석](case-studies/furuyoni/ice-counter/README.md)
+별도로 **Rule → 규칙** 한 항목을 실제 게임에서 확인한 2026-08-23 실행 화면과 QA 기록도 담았습니다. 당시 이미지 파일이 정상이어도 런타임 로드 문제를 해결해야 했던 과정을 볼 수 있습니다. [규칙 적용 성공 사례](case-studies/furuyoni/rule-runtime/README.md)
+
+더 자세한 제작 과정은 [공격후](case-studies/furuyoni/after-attack/README.md), [동결](case-studies/furuyoni/ice-counter/README.md), [찬란한 결투](case-studies/furuyoni/radiant-duels/README.md) 실험에서 확인할 수 있습니다. 이 세 개는 원본 일치 기준에 미달한 별도 시험 후보이며, 위 게임 화면의 적용본과 동일한 파일이라고 주장하지 않습니다.
 
 ## 빠르게 실행
 

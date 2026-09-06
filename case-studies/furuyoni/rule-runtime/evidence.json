@@ -1,0 +1,68 @@
+{
+  "classification": "SUCCESS_HISTORICAL_RUNTIME_QA",
+  "historical_qa_date": "2026-08-23",
+  "scope": "Main-menu Rule label rendered as 규칙",
+  "applied_status": "applied",
+  "applied_at_utc": "2026-08-22T21:44:59.203448+00:00",
+  "runtime": {
+    "process": "furuyoni_digital.exe",
+    "catalog_json_parse_error": false,
+    "crc_or_assetbundle_load_error": false,
+    "visual_result": "Rule label rendered as 규칙"
+  },
+  "runtime_capture": "runtime.png",
+  "known_preexisting_warnings": [
+    "The referenced script on this Behaviour (Game Object '<null>') is missing!",
+    "The character used for Underline is not available in font asset [UI Serif-Heavy SDF]."
+  ],
+  "candidate_build_checks": {
+    "unitypy_reload_main_bundle": true,
+    "unitypy_reload_korean_table": true,
+    "rule_sprite_exported": true,
+    "rule_sprite_size": [
+      198,
+      232
+    ],
+    "UIImage_ko_entry_count": 189,
+    "package_bundle_count": 0
+  },
+  "texture_size_px": [
+    198,
+    237
+  ],
+  "sprite_size_px": [
+    198,
+    232
+  ],
+  "sprite_hash_matches_historical_build_record": true,
+  "qa_record_sha256": "cf5947a91214afb79404455607d791dce769523dbcc3207479981bb9313c52f9",
+  "applied_record_sha256": "c132932c8e8af90d1b935a968ce2739251915691e8a25602ce3fddc5390182cb",
+  "source_record_note": "Selected fields from historical QA and application records; host paths removed. Full game bundles and catalogs not bundled.",
+  "archive_review_date": "2026-09-07",
+  "reviewed_by": "Codex direct visual and file verification",
+  "new_game_run": false,
+  "new_generation_calls": 0,
+  "current_installation_checked": false,
+  "files": [
+    {
+      "file": "runtime.png",
+      "bytes": 3436577,
+      "sha256": "bbbb72a61d4e2cd44c4218ac50416ce1fe19be87f4a565a81ef56cc53381da3e",
+      "size_px": [
+        1920,
+        1080
+      ],
+      "source_bytes_identical": true
+    },
+    {
+      "file": "rule-ko.png",
+      "bytes": 53604,
+      "sha256": "d1daac293aed7e7860fe9bd7e417f1f7af7020eeee0c7f2c2a3d13dd7b3bc1a9",
+      "size_px": [
+        198,
+        232
+      ],
+      "source_bytes_identical": true
+    }
+  ]
+}
