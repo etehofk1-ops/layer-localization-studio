@@ -9,7 +9,11 @@
 | [메인 메뉴 한글 적용](furuyoni/main-menu-applied/README.md) | 메뉴 9개 항목이 한국어로 표시됨 | 사용자가 제공한 적용 전후 전체 게임 화면 |
 | [Rule → 규칙](furuyoni/rule-runtime/README.md) | 규칙 스프라이트가 게임에서 로드·표시됨 | 2026-08-23 실제 실행 캡처, QA·적용 기록, 에셋 해시 |
 
-[![한글패치가 적용된 메인 메뉴](furuyoni/main-menu-applied/after.png)](furuyoni/main-menu-applied/README.md)
+왼쪽의 일본어 메뉴 이미지를 한국어로 제작하고 게임에 적용한 결과가 오른쪽입니다. 하단 **ルール → 규칙**, **リプレイ → 리플레이**, 우측 상단 **終了 → 종료**부터 비교해 보세요. 이미지를 누르면 원래 크기로 볼 수 있습니다.
+
+| 원본 · 일본어 메뉴 | 제작·적용 후 · 한국어 메뉴 |
+| --- | --- |
+| [![제작 전: 원본 일본어 메뉴](furuyoni/main-menu-applied/before.png)](furuyoni/main-menu-applied/before.png) | [![제작 후: 한국어 에셋을 적용한 메뉴](furuyoni/main-menu-applied/after.png)](furuyoni/main-menu-applied/after.png) |
 
 성공 범위는 각각 화면에서 확인된 한국어 표시와 당시 규칙 메뉴의 실행 검증입니다. 두 사례는 서로 다른 시점의 결과이며, 전체 게임 모든 상태의 검수 완료나 현재 CLI로 생성됐다는 뜻은 아닙니다. 각 사례에 근거 날짜와 확인 범위를 적었습니다.
 

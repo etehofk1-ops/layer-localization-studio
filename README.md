@@ -4,6 +4,20 @@
 
 후루요니 한글패치에서 발전시킨 제작 방식을 게임에 종속되지 않는 형태로 옮겼습니다. 현재는 오픈소스 공개를 준비하는 **비공개 저장소**입니다. 랜딩페이지나 패치 배포 서버가 아니라, 우리가 실제 제작할 때 쓰는 작업 구조를 관리합니다.
 
+## 제작 전후: 일본어 메뉴를 한국어 에셋으로
+
+왼쪽은 원본 일본어 메뉴이고, 오른쪽은 **우리가 한국어 메뉴 에셋을 제작해 게임에 적용한 화면**입니다. 메뉴의 붓글씨와 외곽선, 그림 위 배치를 비교해 보세요. 이미지를 누르면 원래 크기로 볼 수 있습니다.
+
+| 원본 · 일본어 메뉴 | 제작·적용 후 · 한국어 메뉴 |
+| --- | --- |
+| [![제작 전: 원본 일본어 메뉴](case-studies/furuyoni/main-menu-applied/before.png)](case-studies/furuyoni/main-menu-applied/before.png) | [![제작 후: 한국어 에셋을 적용한 메뉴](case-studies/furuyoni/main-menu-applied/after.png)](case-studies/furuyoni/main-menu-applied/after.png) |
+
+하단의 **ルール → 규칙**, **リプレイ → 리플레이**, 우측 상단의 **終了 → 종료**처럼, 화면 속 메뉴 이미지의 글씨가 바뀌었습니다. **찬란한 결투·무신의 길·아마네 도장·이계 신사·프로필·설정**까지 총 9개 메뉴 항목의 한국어 표시를 확인할 수 있습니다. [메인 메뉴 제작 전후와 확인 범위](case-studies/furuyoni/main-menu-applied/README.md)
+
+별도로 **Rule → 규칙** 한 항목을 실제 게임에서 확인한 2026-08-23 실행 화면과 QA 기록도 담았습니다. 당시 이미지 파일이 정상이어도 런타임 로드 문제를 해결해야 했던 과정을 볼 수 있습니다. [규칙 적용 성공 사례](case-studies/furuyoni/rule-runtime/README.md)
+
+더 자세한 제작 과정은 [공격후](case-studies/furuyoni/after-attack/README.md), [동결](case-studies/furuyoni/ice-counter/README.md), [찬란한 결투](case-studies/furuyoni/radiant-duels/README.md) 실험에서 확인할 수 있습니다. 이 세 개는 원본 일치 기준에 미달한 별도 시험 후보이며, 위 게임 화면의 적용본과 동일한 파일이라고 주장하지 않습니다.
+
 ## 들어 있는 것
 
 | 구성 | 역할 |
@@ -17,16 +31,6 @@
 | [검증 기록](docs/verification.md) | 실제 실행한 검사와 확인하지 않은 범위 |
 
 이미지 생성은 에이전트가 사용 가능한 생성 도구로 수행합니다. CLI가 모델을 호출하거나 자동으로 번역·레이어를 추론하지는 않습니다. 사용자가 요청한 실제 사례는 `case-studies/furuyoni/`에 별도 권리 표시와 함께 보관합니다. 전체 게임 파일과 번역 데이터베이스는 포함하지 않습니다.
-
-## 성공 사례: 실제 게임에 적용한 메인 메뉴
-
-[![한글패치가 적용된 실제 메인 메뉴](case-studies/furuyoni/main-menu-applied/after.png)](case-studies/furuyoni/main-menu-applied/README.md)
-
-사용자가 제공한 패치 적용 전후 화면에서 **찬란한 결투·무신의 길·아마네 도장·이계 신사·프로필·규칙·리플레이·설정·종료**가 한국어로 표시된 결과를 확인할 수 있습니다. [원본과 적용 화면 비교](case-studies/furuyoni/main-menu-applied/README.md)
-
-별도로 **Rule → 규칙** 한 항목을 실제 게임에서 확인한 2026-08-23 실행 화면과 QA 기록도 담았습니다. 당시 이미지 파일이 정상이어도 런타임 로드 문제를 해결해야 했던 과정을 볼 수 있습니다. [규칙 적용 성공 사례](case-studies/furuyoni/rule-runtime/README.md)
-
-더 자세한 제작 과정은 [공격후](case-studies/furuyoni/after-attack/README.md), [동결](case-studies/furuyoni/ice-counter/README.md), [찬란한 결투](case-studies/furuyoni/radiant-duels/README.md) 실험에서 확인할 수 있습니다. 이 세 개는 원본 일치 기준에 미달한 별도 시험 후보이며, 위 게임 화면의 적용본과 동일한 파일이라고 주장하지 않습니다.
 
 ## 빠르게 실행
 
