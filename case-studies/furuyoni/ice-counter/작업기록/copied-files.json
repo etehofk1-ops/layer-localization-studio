@@ -1,0 +1,84 @@
+{
+  "algorithm": "sha256",
+  "scope": "Binary files copied without modification from the original production folder",
+  "files": [
+    {
+      "file": "원본에셋/冻花结晶_EN_원본.png",
+      "bytes": 91158,
+      "sha256": "ca3be5ea3608c0085c1d5fa465f6222060f564c0c220b2c17ff05b353369eeee",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L0_붓바탕.png",
+      "bytes": 55529,
+      "sha256": "5eaac8f457a7f994a0c0f58733516954e64ec7d534a964bdcf7fa707f7dbd90c",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1a_바탕그림자_베이크.png",
+      "bytes": 11224,
+      "sha256": "501e2880c71d623ff9551ff4be52887a9e3287bd7e290883d6795733f22c7292",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1b_글씨외곽선_베이크.png",
+      "bytes": 4153,
+      "sha256": "d2c5ad3e1a3569198539e054a2e47ccb79b89fee14b722596435cffa59c61daa",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L2_텍스트_한글.png",
+      "bytes": 20521,
+      "sha256": "f8dc2c7982fe988858bb594177b6fc2d98fb2c6d4055a263430a86d871f04001",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/冻花结晶_EN_KO.png",
+      "bytes": 73126,
+      "sha256": "bce4894c262a672fdcfc5162353ae135864b45768fe438e871df8e64631c0d7b",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/레이어_구성.png",
+      "bytes": 92968,
+      "sha256": "6f4853dbaa7bdd64ea7a399bad0b3c8c01d95aae4ae8fd442650575060f3f5a9",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/원본_한글_대조.png",
+      "bytes": 288221,
+      "sha256": "c728852dc7b3a75288b30f0a9b469c7fd2d38c7616a01afe5ae8f5eab4377fd9",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "冻花结晶_EN_KO.psd",
+      "bytes": 1195517,
+      "sha256": "01ded24f2d48eb24f6abd9d7b69c9b9d8f108d33870e09a5f5dc2ec3b525d838",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/01_generated_art_rgba_rejected.png",
+      "bytes": 1519671,
+      "sha256": "fec4298d8c8ed6e3c211dff20dc0ed026e9742d76f1f858955f4c05ac3399292",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/02_generated_art_magenta.png",
+      "bytes": 1766523,
+      "sha256": "c3a947629ee7eea3957b26de66bdedcda2565e466aa87207e8c7cf32d6601e98",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/03_generated_text_magenta.png",
+      "bytes": 1028710,
+      "sha256": "756a2c110ae972b9f47834201b8caa982a8b4b94f2bbf8133df7c8716d092402",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/원본_밝기별_분석.png",
+      "bytes": 107670,
+      "sha256": "b57f33847bca64c4a8350b62e58ae6383a3b09c7e1a842618c8859ea59e3d6d5",
+      "source_bytes_identical": true
+    }
+  ]
+}

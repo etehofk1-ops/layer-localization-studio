@@ -1,0 +1,139 @@
+{
+  "asset_id": "攻击后_EN",
+  "source": {
+    "path": "원본에셋/攻击后_EN_원본.png",
+    "sha256": "c5c7667fabc9251d005c9c99d73dd4766bf01c877c63e906e81563bc410a59a8",
+    "size_px": [
+      362,
+      377
+    ]
+  },
+  "record_timing": "Source size, alpha, palette and translation inspected before first generation; dark/light comparison and this consolidated record completed during candidate production.",
+  "translation": {
+    "text": "공격후",
+    "source": "Historical project glossary: Furuyoni_UI_ko.csv line 100 and tm_official_ko.csv; full tables not bundled.",
+    "line_breaks": [
+      "공격",
+      "후"
+    ]
+  },
+  "observations": {
+    "viewed_on_dark_and_light": true,
+    "alpha_checked": true,
+    "transparent_fraction": 0.36530767765288624,
+    "semitransparent_fraction_all_pixels": 0.37653325908231605,
+    "background_or_effect_evidence": "Hidden red RGB exists under zero alpha; on light and dark grounds the center is transparent. Colored alpha falls away with distance from the white ring and glyphs. There is no separate solid background plate.",
+    "colors": {
+      "white_paint": {
+        "rgb": [
+          255,
+          252,
+          252
+        ],
+        "range_p5_p95": [
+          [
+            251.0,
+            244.0,
+            244.0
+          ],
+          [
+            255.0,
+            255.0,
+            255.0
+          ]
+        ],
+        "hex": "#FFFCFC"
+      },
+      "red_glow": {
+        "rgb": [
+          255,
+          79,
+          79
+        ],
+        "range_p5_p95": [
+          [
+            255.0,
+            68.0,
+            68.0
+          ],
+          [
+            255.0,
+            168.0,
+            168.0
+          ]
+        ],
+        "hex": "#FF4F4F"
+      }
+    }
+  },
+  "layers_bottom_to_top": [
+    {
+      "name": "L1_붉은발광_베이크",
+      "role": "Measured glow under generated ring and text",
+      "color_rgb": [
+        255,
+        89,
+        89
+      ],
+      "color_hex": "#FF5959",
+      "action": "postprocess",
+      "parameters": {
+        "spread_radius_px": 4,
+        "bake_helper_size_px": 3,
+        "opacity_pct": 100
+      }
+    },
+    {
+      "name": "L0_아트",
+      "role": "Newly generated white brush ring",
+      "action": "generate",
+      "color": {
+        "rgb": [
+          255,
+          252,
+          252
+        ],
+        "range_p5_p95": [
+          [
+            251.0,
+            244.0,
+            244.0
+          ],
+          [
+            255.0,
+            255.0,
+            255.0
+          ]
+        ],
+        "hex": "#FFFCFC"
+      },
+      "bbox_px": [
+        10,
+        9,
+        353,
+        356
+      ]
+    },
+    {
+      "name": "L2_텍스트_한글",
+      "role": "Newly generated Korean brush lettering",
+      "action": "generate",
+      "text": "공격후",
+      "line_breaks": [
+        "공격",
+        "후"
+      ]
+    }
+  ],
+  "planned_generation_calls": 2,
+  "actual_generation_calls": 3,
+  "retry_reason": "First RGBA request rendered a checkerboard in RGB",
+  "source_pixel_cutout_allowed": false,
+  "source_alpha_inheritance_allowed": false,
+  "decomposition_is_inferred": true,
+  "casebook_note": {
+    "source_record_sha256": "f2fd72d603e5c1f4890184dcfaf38bfd9444268a6cd309c415aa7aba732a7a33",
+    "path_base": "case folder root",
+    "schema": "historical production record; not v0.1 CLI input"
+  }
+}

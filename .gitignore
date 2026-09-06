@@ -23,3 +23,11 @@ private/
 *.bundle
 .DS_Store
 Thumbs.db
+
+# User-requested historical case studies in this private repository only.
+!/case-studies/furuyoni/after-attack/**/*.png
+!/case-studies/furuyoni/after-attack/*.psd
+!/case-studies/furuyoni/ice-counter/**/*.png
+!/case-studies/furuyoni/ice-counter/*.psd
+!/case-studies/furuyoni/radiant-duels/**/*.png
+!/case-studies/furuyoni/radiant-duels/*.psd

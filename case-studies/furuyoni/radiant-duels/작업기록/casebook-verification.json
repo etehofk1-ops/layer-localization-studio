@@ -1,0 +1,40 @@
+{
+  "verified_date": "2026-09-07",
+  "executed": true,
+  "status": "ARCHIVE_AND_PSD_PASS",
+  "copied_binary_files": 24,
+  "copied_bytes": 36640722,
+  "all_source_bytes_preserved": true,
+  "source_sha256": "708140fe5ed9aec0ee61e711f557976861ae8077bc865c223f64c30d11ad390c",
+  "size_px": [
+    745,
+    743
+  ],
+  "layer_count": 7,
+  "layers_bottom_to_top": [
+    "L1c_프레임그림자_베이크",
+    "L0a_배경판",
+    "L0b_나무프레임",
+    "L0c_캐릭터",
+    "L1a_흰베일_베이크",
+    "L1b_글씨흰외곽선_베이크",
+    "L2_텍스트_한글"
+  ],
+  "mask_present": true,
+  "composite_comparisons": {
+    "dark": {
+      "max_channel_delta": 3,
+      "mean_channel_delta": 0.15490679601711424
+    },
+    "light": {
+      "max_channel_delta": 2,
+      "mean_channel_delta": 0.15546081096949604
+    }
+  },
+  "photoshop_gui_opened": false,
+  "new_generation_calls": 0,
+  "new_in_game_qa": false,
+  "original_fidelity_gate_status": "NOT_PASSED",
+  "release_approved": false,
+  "route": "Codex direct import and artifact verification"
+}

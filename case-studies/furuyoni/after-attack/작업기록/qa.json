@@ -1,0 +1,31 @@
+{
+  "status": "candidate_only",
+  "size": [
+    362,
+    377
+  ],
+  "alpha_range": [
+    0,
+    255
+  ],
+  "magenta": {
+    "투명%": 41.2,
+    "반투명%": 35.02,
+    "불투명영역_마젠타%": 0.0,
+    "투명영역_마젠타%": 0.0
+  },
+  "outside_text_match": 0.3171989151415936,
+  "required_outside_text_match": 0.95,
+  "strict_gate_pass": false,
+  "game_injected": false,
+  "generation_calls_total": 3,
+  "generation_calls_this_revision": 0,
+  "source_pixels_reused": false,
+  "source_alpha_inherited": false,
+  "_casebook": {
+    "source_record_sha256": "7a865eb35a84ea810ffa40422d4cdab4bccd9f1772ef1e28dcfb219c4a617b8e",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

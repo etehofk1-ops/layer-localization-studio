@@ -1,0 +1,57 @@
+{
+  "backend": "built-in image_gen",
+  "historical_date": "2026-09-05",
+  "generation_calls": 3,
+  "planned_calls": 2,
+  "retry_calls": 1,
+  "path_base": "case folder root",
+  "source_record_sha256": "caad87b08c9dbac92fb01225e82728b9f195ae0a0a119dc67ef9dd30ec928fed",
+  "normalization": "Host paths and tool-output locations removed; exact prompt text and raw output bytes preserved. Retry mapping and selection are summarized from production records.",
+  "calls": [
+    {
+      "call": 1,
+      "role": null,
+      "prompt": "Use case: text-localization, production game UI layer regeneration. Input image is STYLE AND SHAPE REFERENCE, not a bitmap to cut out. Generate a NEW standalone background-art layer for this 362x377 sprite: ONLY its white hand-painted circular brushstroke / enso ring. Match the reference ring's exact irregular outline, slightly tall proportions, thin scraped left edge, wide sweep at upper right and lower arc, small intentional dry-brush holes and tapering brush ends. Preserve this particular hand-painted ring design, not a generic symmetrical circle. Remove ALL lettering including After Attack by regenerating the clean ring artwork. The interior of the circle is entirely empty transparent. The exterior is transparent. NO red pigment, NO glow, NO shadow, NO gradients, NO disk filling, NO background, NO lettering, NO extra marks. Pure warm white brush pigment approximately RGB 255,250,250. Output PNG with a TRUE ALPHA CHANNEL (transparent background, not black, not white, not magenta, not checkerboard). Keep the complete ring visible with at least 6% transparent margins at each edge. Render at high resolution with crisp dry-brush contours; retain its native slightly vertical oval silhouette. This is one layer only, with no labels or mockup.",
+      "raw_file": "작업기록/생성원본/rejected_checkerboard.png",
+      "sha256": "d38e6298fdf157523db6484b2962b2a4bde9ff96df9ca45999e259b1178949db",
+      "references": [
+        "원본에셋/攻击后_EN_원본.png"
+      ],
+      "references_provenance": "reconstructed from prompt and production notes",
+      "status": "rejected",
+      "selected_for_final_layer_pixels": false,
+      "retry_of": null,
+      "notes": "RGB image with rendered checkerboard; no transparent pixels"
+    },
+    {
+      "call": 2,
+      "role": null,
+      "prompt": "Use case: production game UI art regeneration. Use the attached original as shape and brushstroke reference. Generate ONLY a newly painted white circular brushstroke, the same ring silhouette shown around After Attack. No lettering anywhere. The reference ring is slightly taller than wide with a scraped thin left edge, a broad upper stroke that sweeps right, a lower curling brushstroke, natural dry-brush gaps. Match the particular ring, not a generic perfect circle. ALL background including the center, exterior and brush gaps must be solid UNIFORM PURE MAGENTA #FF00FF. White paint is flat warm white RGB255,250,250. NO shadows, NO glow, NO embossing, NO 3D, NO gradient, NO checkerboard, NO text, NO red. Make it a flat 2D brush-painted game sprite with medium-thin irregular strokes like reference, not an extra thick donut. Entire ring fully visible with 7 percent pure magenta margin on every side. Single layer only, no explanatory labels.",
+      "raw_file": "작업기록/생성원본/ring_generated_magenta.png",
+      "sha256": "0cb8b612e175ca32245c5a46f96e2622d3f1b75328765796ebff46eb67bd9ef2",
+      "references": [
+        "원본에셋/攻击后_EN_원본.png"
+      ],
+      "references_provenance": "reconstructed from prompt and production notes",
+      "status": "accepted_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": 1,
+      "notes": ""
+    },
+    {
+      "call": 3,
+      "role": null,
+      "prompt": "Use case: Korean localization lettering layer for game UI. The attached original is the handwriting STYLE reference only. Generate newly painted Korean lettering matching the white 'After Attack' letters: same hand, loose angled expressive brush strokes, irregular tapering ends, subtle dry-brush texture, medium thin strokes, open readable inner spaces, not a computer font, not bold block calligraphy. Text must read exactly '공격후' arranged in two centered lines: first line '공격', second line '후'. The second line is a single centered character with the SAME character height and stroke weight as the first line. Each syllable must be complete and legible. White paint RGB255,255,255. ALL background must be solid UNIFORM PURE MAGENTA #FF00FF, including all counters/holes inside the Korean letters. NO ring, NO circle, NO border, NO red, NO glow, NO shadows, NO gradients, NO checkerboard, NO other words. Keep generous magenta margins on every side so no stroke is clipped. This is a flat standalone lettering layer, not the finished badge.",
+      "raw_file": "작업기록/생성원본/text_generated_magenta.png",
+      "sha256": "284254d1cd02051843c320d11a427db224a47e91b0883539d903aa5d9cc66280",
+      "references": [
+        "원본에셋/攻击后_EN_원본.png"
+      ],
+      "references_provenance": "reconstructed from prompt and production notes",
+      "status": "accepted_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": null,
+      "notes": ""
+    }
+  ]
+}

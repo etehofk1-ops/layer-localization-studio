@@ -1,0 +1,158 @@
+{
+  "asset_id": "绚烂竞演_EN",
+  "size_px": [
+    745,
+    743
+  ],
+  "text_ko": "찬란한 결투",
+  "layers": [
+    "레이어에셋/L1c_프레임그림자_베이크.png",
+    "레이어에셋/L0a_배경판.png",
+    "레이어에셋/L0b_나무프레임.png",
+    "레이어에셋/L0c_캐릭터.png",
+    "레이어에셋/L1a_흰베일_베이크.png",
+    "레이어에셋/L1b_글씨흰외곽선_베이크.png",
+    "레이어에셋/L2_텍스트_한글.png"
+  ],
+  "alpha_from_source": false,
+  "source_pixels_used": false,
+  "generated_text_box": [
+    133,
+    378,
+    489,
+    621
+  ],
+  "source_text_box": [
+    93,
+    374,
+    535,
+    624
+  ],
+  "placement": {
+    "panel": [
+      25,
+      24,
+      721,
+      720
+    ],
+    "frame": [
+      7,
+      6,
+      740,
+      739
+    ],
+    "character_scale": 0.52,
+    "character_offset": [
+      140,
+      23
+    ],
+    "character_alignment_evidence": {
+      "source_red_eye_centroid": [
+        416.035,
+        261.873
+      ],
+      "generated_red_eye_centroid": [
+        531.6972010178117,
+        459.4274809160305
+      ],
+      "transformed_eye": [
+        416.4825445292621,
+        261.9022900763359
+      ]
+    }
+  },
+  "effects": {
+    "frame_generated_median_rgb": [
+      140.0,
+      102.0,
+      80.0
+    ],
+    "frame_target_top_rgb": [
+      78,
+      57,
+      43
+    ],
+    "frame_target_bottom_rgb": [
+      157,
+      135,
+      122
+    ],
+    "character_fade_mask": "레이어에셋/마스크와원본/M_캐릭터_페이드.png",
+    "character_raw_layer": "레이어에셋/마스크와원본/L0c_캐릭터_페이드전.png",
+    "vertical_fade_control_points": [
+      [
+        0,
+        1
+      ],
+      [
+        265,
+        1
+      ],
+      [
+        325,
+        0.76
+      ],
+      [
+        400,
+        0.36
+      ],
+      [
+        510,
+        0.12
+      ],
+      [
+        645,
+        0
+      ]
+    ],
+    "right_fade_control_points": [
+      [
+        0,
+        1
+      ],
+      [
+        490,
+        1
+      ],
+      [
+        560,
+        0.83
+      ],
+      [
+        650,
+        0.35
+      ],
+      [
+        725,
+        0.04
+      ],
+      [
+        744,
+        0
+      ]
+    ],
+    "veil_rgb": [
+      255,
+      251,
+      246
+    ],
+    "veil_peak_opacity": 0.32,
+    "outline_rgb": [
+      255,
+      255,
+      255
+    ],
+    "outline_radius_px": 7,
+    "text_color_median_offset": [
+      16.0,
+      16.0,
+      17.0
+    ]
+  },
+  "_casebook": {
+    "source_record_sha256": "2a80e291294cc98e481565062ab4bab8dbb3f8e544c21a7b414cfecb789f547d",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

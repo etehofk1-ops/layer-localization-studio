@@ -1,0 +1,122 @@
+{
+  "backend": "built-in image_gen",
+  "historical_date": "2026-09-05",
+  "generation_calls": 7,
+  "planned_calls": 5,
+  "retry_calls": 2,
+  "path_base": "case folder root",
+  "source_record_sha256": "9dc9641da4a2a3eb588bbc7754ada97038fad459a300d55d44d712648252bc08",
+  "normalization": "Host paths and tool-output locations removed; exact prompt text and raw output bytes preserved. Retry mapping and selection are summarized from production records.",
+  "calls": [
+    {
+      "call": 1,
+      "role": "textless_layout_master",
+      "prompt": "Use case: text-localization, intermediate art-reference stage for rebuilding a game menu sprite in layers. Reference image 1 is the source PNG; reference image 2 is its TRUE visible appearance correctly composited on dark and light grounds. Generate a new TEXTLESS layout master of the exact source design. Remove the words Radiant Duels and all their white keylines and dark strokes, reveal plausible continuous underlying clothing and cream lattice pattern. Keep the exact character face, winking eye, red open eye, expression, black hair swept in a huge arc to the upper right, pink cherry blossom hair ornament, red and gold ribbons, elaborate black/red/cream kimono, the same pose and proportion. Keep the wood diamond frame and cream lattice paper, original palette, original rough hand-drawn inky texture, original character placement, and original gentle white veil across the lower half. Reconstruct artwork, not a new pose or new face. Match original dimensions ratio 745:743. Entire diamond and loose hair must be visible with modest 5% transparent margin all around; centered composition. The hair may cross the frame at top, right end fades to transparency. Do not add objects, lettering, new ornaments or change design. NO English, NO Korean, no faint remnants of letters, no letter-shaped shadows. Output PNG with a TRUE ALPHA CHANNEL, not a checkerboard drawing or a flattened background. Outside the diamond and character is transparent. This is the textless reference for subsequent separate frame, panel and character generation.",
+      "raw_file": "작업기록/생성원본/01_generated_textless_master.png",
+      "sha256": "c22b9f84815a258dd90077f6372da01206ff02e471c2eced7ab6cec9a619cb9b",
+      "references": [
+        "원본에셋/绚烂竞演_EN_원본.png",
+        "작업기록/원본_밝기별_분석.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "reference_only",
+      "selected_for_final_layer_pixels": false,
+      "retry_of": null,
+      "notes": "RGB with baked checkerboard, never used as a final art layer"
+    },
+    {
+      "call": 2,
+      "role": "frame",
+      "prompt": "Use case: background-extraction, new isolated production layer for Korean localization. Reference 1 is the newly generated TEXTLESS layout master; reference 2 is the original sprite. Match original structure rather than adding detail. The checkerboard in reference 1 is a failed transparency preview: DO NOT copy it. Generate a NEW isolated raster layer. Only the narrow brown WOODEN DIAMOND FRAME. Four equal straight sides and pointed four corners, with dark inked inner/outer outlines, mottled brown grain and slightly bevelled wood, matching the reference frame's thickness (roughly 16 pixels in a 745-pixel original). All four bars must be complete including the parts hidden behind hair in the source. Diamond vertices at top/right/bottom/left; no tilt, no perspective. Frame interior is completely empty magenta. NO cream paper, NO lattice, NO character, NO hair, no decoration inside. Muted brown colors RGB149,123,108 midtone, darker ink edging; preserve irregular subtle weathering, do not make photographic timber. Surround the entire shape and all holes with UNIFORM PURE MAGENTA #FF00FF for chroma key, no checkerboard, no white/black background. No shadows, glow, hazy fade, text, labels or other components. Keep complete object visible with about 6 percent margin on a SQUARE canvas. Clean edge transitions, preserve rough artwork textures. ",
+      "raw_file": "작업기록/생성원본/02_generated_frame_magenta.png",
+      "sha256": "b528029a9b474cf941c7b7b854e56cb21c71f52abf5f9152bd263295d38d324d",
+      "references": [
+        "작업기록/생성원본/01_generated_textless_master.png",
+        "원본에셋/绚烂竞演_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "selected_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": null,
+      "notes": ""
+    },
+    {
+      "call": 3,
+      "role": "panel",
+      "prompt": "Use case: background-extraction, new isolated production layer for Korean localization. Reference 1 is the newly generated TEXTLESS layout master; reference 2 is the original sprite. Match original structure rather than adding detail. The checkerboard in reference 1 is a failed transparency preview: DO NOT copy it. Generate a NEW isolated raster layer. Only the flat DIAMOND-SHAPED CREAM PAPER INTERIOR with beige diagonal lattice pattern and the very subtle pale-pink curved wave/floral motif from the reference. Complete and symmetric 45 degree rotated square; no wooden frame. Match the reference spacing, thin rough beige/gold diagonals and corner joints, paper material colors warm near-white cream, no new ornament. Where the character and old lettering covered the paper, extend the same regular lattice plausibly. All original figure, hair, clothing, text and white haze completely absent. Do not make a complex new Japanese pattern, do not make a thick outline, no gold frame. Lattice is understated, source cream around RGB245,237,227, beige lines around RGB172,157,140. Surround the entire shape and all holes with UNIFORM PURE MAGENTA #FF00FF for chroma key, no checkerboard, no white/black background. No shadows, glow, hazy fade, text, labels or other components. Keep complete object visible with about 6 percent margin on a SQUARE canvas. Clean edge transitions, preserve rough artwork textures. ",
+      "raw_file": "작업기록/생성원본/03_generated_panel_magenta.png",
+      "sha256": "ddf278a6a1c6bb26380ad2df169b8a2eff206550f3ddbbe0d6fd86bb6103ddd9",
+      "references": [
+        "작업기록/생성원본/01_generated_textless_master.png",
+        "원본에셋/绚烂竞演_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "selected_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": null,
+      "notes": ""
+    },
+    {
+      "call": 4,
+      "role": "character",
+      "prompt": "Use case: background-extraction, new isolated production layer for Korean localization. Reference 1 is the newly generated TEXTLESS layout master; reference 2 is the original sprite. Match original structure rather than adding detail. The checkerboard in reference 1 is a failed transparency preview: DO NOT copy it. Generate a NEW isolated raster layer. Only the exact illustrated CHARACTER portrait visible in the reference. Preserve the small tilted winking face, open red eye on viewer-left, closed eye on viewer-right, face proportions, shy smile, black bob around face and very long black/navy ponytail sweeping broadly from upper left across the top toward the upper right, pink cherry blossom ornament at upper-left of head, red/gold ties. Preserve the elaborate black, burgundy-red, cream and pale-lilac kimono and the vertical dark/red/gold element behind her left shoulder. Only bust/upper torso as in source, no full body, no hands or objects invented. Her face is near (60% width,40% height) of the source image, hair top near 7% image height and arcs right. Keep hairstyle and face identity extraordinarily close to original; thick irregular black linework and painterly flat shaded brush texture, no smooth modern anime redesign. Regenerate the small clothing region previously hidden behind the words as plausible continuation. NO diamond, NO wood frame, NO beige lattice or paper, NO broad white veil, NO white highlights surrounding the silhouette. Hair and clothing opaque, including the tips: their original fading will be added as an alpha effect separately. Include the whole sweeping ponytail and keep its right tip safely inside canvas rather than clipped. Do NOT fade into magenta. Surround the entire shape and all holes with UNIFORM PURE MAGENTA #FF00FF for chroma key, no checkerboard, no white/black background. No shadows, glow, hazy fade, text, labels or other components. Keep complete object visible with about 6 percent margin on a SQUARE canvas. Clean edge transitions, preserve rough artwork textures. ",
+      "raw_file": "작업기록/생성원본/04_generated_character_magenta.png",
+      "sha256": "4080210f9e4d282b811b7b3e3ac4a8d620ca36586e90eb8c4c8cf6b6baec62bd",
+      "references": [
+        "작업기록/생성원본/01_generated_textless_master.png",
+        "원본에셋/绚烂竞演_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "superseded",
+      "selected_for_final_layer_pixels": false,
+      "retry_of": null,
+      "notes": ""
+    },
+    {
+      "call": 5,
+      "role": "text",
+      "prompt": "Use case: text-localization. Korean lettering-only layer for the attached game menu emblem. Reference has Radiant on the first line and Duels on the second. Generate exactly the Korean text: first line \"찬란한\", second line \"결투\". Same hand as the attached cursive English brush lettering: fluid continuous gestural calligraphy, visibly forward-leaning, elongated tapered brush ends, open counters, lively baselines, irregular organic strokes; NOT bold block type, NOT square font, NOT rigidly upright. Keep all five Hangul syllables correctly formed and clearly readable. Three syllables on upper line, two on lower, lower line slightly indented to the right, close vertical line spacing. Dark warm charcoal ink RGB61,56,55 with subtle dry ink grain, not pure jet black. NO white outline; this will be added separately. NO shadow, NO glow, NO gradient, NO panel, NO character, NO frame. The only visible content is the complete two-line Korean lettering with a generous 10% margin. All surrounding area and all holes/counters within characters must be UNIFORM PURE MAGENTA #FF00FF for chroma key. No checkerboard. Keep text fully opaque including thin brush tips.",
+      "raw_file": "작업기록/생성원본/05_generated_text_magenta.png",
+      "sha256": "5665eb6dc521e6b13f4a78b6c2c7d9c5655226ece5394bbd337b3dd2104bf4c8",
+      "references": [
+        "원본에셋/绚烂竞演_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "superseded",
+      "selected_for_final_layer_pixels": false,
+      "retry_of": null,
+      "notes": ""
+    },
+    {
+      "call": 6,
+      "role": "character_retry",
+      "prompt": "Use case: identity-preserve game sprite layer regeneration. Image 1 is the ORIGINAL illustration and is the controlling reference for all face, pose, hair shape and clothing detail. Image 2 is the earlier generated character plate that needs correction. Generate only the original character on a uniform pure magenta #FF00FF background. Correct image 2: it introduced LARGE MAGENTA TRIANGULAR HOLES between ponytail locks and a different silhouette. The original ponytail is a broad densely connected black/navy painted MASS sweeping above the head and to the upper right; preserve that continuous mass, with internal blue/grey hair streaks drawn over it, not cut apart into separated spikes. Preserve the original face and its exact proportions, small closed-mouth smile, round open red eye on viewer-left, gently closed eye on viewer-right, pink cherry blossom and red/gold ties. Match the original body outline and hairstyle, original rough inky hand-painted texture; do not add new facial detail, new costume pattern or objects. The raised dark/red/gold form behind her left shoulder stays in its original proportions. Do not enlarge the face relative to hair or slim the long ponytail. Remove source lettering, wood frame and paper lattice through new generation. Generate opaque dark hair core and opaque clothing, NO white veil, NO shadows, NO fades; the source's gentle right-edge and lower fading will be made with a separate editable mask. Composition: on square canvas, retain source layout proportions, head around 60 percent across and 36 percent down, huge hair arc above it; visible upper torso below. Keep entire hair sweep and outfit inside at least 5 percent margin. No text of any language, no diamond, no lattice, no paper, no wooden frame, no checkerboard. All true surrounding gaps are pure magenta, but DO NOT introduce gaps in the continuous ponytail mass.",
+      "raw_file": "작업기록/생성원본/06_generated_character_retry_magenta.png",
+      "sha256": "6c2c6837da2dc5bdf952184353a519b0a21a99f883647543618ded8f68733178",
+      "references": [
+        "원본에셋/绚烂竞演_EN_원본.png",
+        "작업기록/생성원본/04_generated_character_magenta.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "selected_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": 4,
+      "notes": ""
+    },
+    {
+      "call": 7,
+      "role": "text_retry",
+      "prompt": "Use case: text-localization. The original reference is a two-line rounded flowing BRUSH SCRIPT logo, not sharp martial-arts block lettering. Generate ONLY these Korean words, precisely: first row \"찬란한\", second row \"결투\". Style must echo the English Radiant Duels: flowing hand-painted curves, moderately slender strokes, gently rounded joins, occasional soft dry brush grain and natural tapered ends. Avoid long needle-sharp spikes, aggressive racing-logo wedges, huge descending tails, squared gothic type or cramped characters. Keep each Hangul syllable natural, readable and separate. Layout: a WIDE COMPACT two-line title, total ink width roughly 1.7 times total ink height. Upper row has 3 evenly spaced syllables; lower row has 2 centered syllables, slightly indented; upper and lower rows have similar character height, very small clear line gap. Shorten extended tails that make the overall title too tall. Dark warm charcoal ink RGB61,56,55. NO white outline or white fill, NO glow, NO shadow, NO border, NO illustration. Pure uniform MAGENTA #FF00FF everywhere outside strokes, including letter counters. Complete title visible with 10 percent safety margin. Preserve the original's flowing handwritten character rather than replacing it with rigid angular calligraphy.",
+      "raw_file": "작업기록/생성원본/07_generated_text_retry_magenta.png",
+      "sha256": "11b7ec1f2d55bf1850947d6e8100a13eb7aef50180ab5a384c69d979b29ed7ae",
+      "references": [
+        "원본에셋/绚烂竞演_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "selected_for_candidate",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": 5,
+      "notes": ""
+    }
+  ]
+}

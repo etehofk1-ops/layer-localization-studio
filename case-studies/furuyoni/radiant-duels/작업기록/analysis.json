@@ -1,0 +1,265 @@
+{
+  "asset_id": "绚烂竞演_EN",
+  "source": {
+    "path": "원본에셋/绚烂竞演_EN_원본.png",
+    "sha256": "708140fe5ed9aec0ee61e711f557976861ae8077bc865c223f64c30d11ad390c",
+    "size_px": [
+      745,
+      743
+    ],
+    "visible_bbox_alpha_gt8": [
+      2,
+      2,
+      742,
+      743
+    ]
+  },
+  "translation": {
+    "text": "찬란한 결투",
+    "lines": [
+      "찬란한",
+      "결투"
+    ],
+    "source": "Historical project metadata: asset_meta.py line 45; full source document not bundled."
+  },
+  "alpha": {
+    "transparent_fraction": 0.391053862899365,
+    "semi_fraction_all_pixels": 0.12112332553497068,
+    "semi_fraction_visible": 0.19890646833178569
+  },
+  "measurements": {
+    "ink": {
+      "sample_box": [
+        92,
+        385,
+        533,
+        620
+      ],
+      "sample_count": 25295,
+      "median_rgb": [
+        61.0,
+        56.0,
+        55.0
+      ],
+      "range_p5_p95": [
+        [
+          33.0,
+          30.0,
+          30.0
+        ],
+        [
+          88.0,
+          81.0,
+          80.0
+        ]
+      ],
+      "selection_note": "bounded color samples, not a source layer extraction"
+    },
+    "outline": {
+      "sample_box": [
+        93,
+        381,
+        531,
+        622
+      ],
+      "sample_count": 23182,
+      "median_rgb": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "range_p5_p95": [
+        [
+          253.0,
+          253.0,
+          252.0
+        ],
+        [
+          255.0,
+          255.0,
+          255.0
+        ]
+      ],
+      "selection_note": "bounded color samples, not a source layer extraction"
+    },
+    "frame": {
+      "sample_box": [
+        220,
+        506,
+        405,
+        738
+      ],
+      "sample_count": 3371,
+      "median_rgb": [
+        149.0,
+        123.0,
+        108.0
+      ],
+      "range_p5_p95": [
+        [
+          100.0,
+          84.0,
+          74.0
+        ],
+        [
+          171.0,
+          150.0,
+          133.5
+        ]
+      ],
+      "selection_note": "bounded color samples, not a source layer extraction"
+    },
+    "paper": {
+      "sample_box": [
+        310,
+        625,
+        406,
+        684
+      ],
+      "sample_count": 4046,
+      "median_rgb": [
+        251.0,
+        247.0,
+        243.0
+      ],
+      "range_p5_p95": [
+        [
+          234.0,
+          226.0,
+          220.0
+        ],
+        [
+          253.0,
+          248.0,
+          245.0
+        ]
+      ],
+      "selection_note": "bounded color samples, not a source layer extraction"
+    },
+    "hair": {
+      "sample_box": [
+        285,
+        75,
+        522,
+        200
+      ],
+      "sample_count": 20345,
+      "median_rgb": [
+        31.0,
+        33.0,
+        43.0
+      ],
+      "range_p5_p95": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          81.0,
+          81.0,
+          88.0
+        ]
+      ],
+      "selection_note": "bounded color samples, not a source layer extraction"
+    }
+  },
+  "observations": [
+    "Diamond wood frame and cream lattice-paper base.",
+    "Character hair crosses the upper frame and fades along the upper-right boundary.",
+    "Lettering overlaps clothing and a broad white veil; hidden clothing must be newly inferred.",
+    "Dark textured brush letters have a fairly crisp white outline, not broad white glyph fill.",
+    "Stray RGB visible outside the silhouette in a raw viewer is not a layer."
+  ],
+  "inferred_not_recovered_original_psd": true,
+  "geometry": {
+    "diamond_vertices": [
+      [
+        372,
+        6
+      ],
+      [
+        739,
+        373
+      ],
+      [
+        371,
+        738
+      ],
+      [
+        7,
+        373
+      ]
+    ],
+    "text_bbox_observed": [
+      93,
+      374,
+      535,
+      624
+    ],
+    "character_observed_bbox_approx": [
+      166,
+      44,
+      675,
+      590
+    ]
+  },
+  "layers_bottom_to_top": [
+    {
+      "id": "L0a",
+      "name": "배경판",
+      "method": "generate"
+    },
+    {
+      "id": "L0b",
+      "name": "나무프레임",
+      "method": "generate"
+    },
+    {
+      "id": "L0c",
+      "name": "캐릭터",
+      "method": "generate"
+    },
+    {
+      "id": "L1a",
+      "name": "캐릭터_페이드와_흰베일",
+      "method": "measured effect on generated layers; keep independently editable mask/veil"
+    },
+    {
+      "id": "L1b",
+      "name": "글씨_흰외곽선",
+      "method": "effect from generated lettering"
+    },
+    {
+      "id": "L2",
+      "name": "한글글씨",
+      "method": "generate"
+    }
+  ],
+  "generation_plan": [
+    "Textless layout master from original, as reference for decomposition",
+    "Wood frame only from master",
+    "Cream patterned diamond panel only from master",
+    "Character-only portrait from master, no veil or shadow; apply measured fading later",
+    "Korean brush lettering from original, no outline; bake outline separately"
+  ],
+  "planned_generation_calls": 5,
+  "retry_calls_count_separately": true,
+  "source_pixel_cutout_or_erasure_allowed": false,
+  "source_alpha_reuse_allowed": false,
+  "status": "analysis_complete_before_generation",
+  "constraints": [
+    "Preserve all raw generated outputs and failed versions.",
+    "No ZIP.",
+    "No images/edited or game installation changes."
+  ],
+  "unresolved": [
+    "Actual hidden clothing behind English text cannot be uniquely recovered.",
+    "Fine portrait identity and wood lattice fidelity require visual comparison; not guaranteed."
+  ],
+  "casebook_note": {
+    "source_record_sha256": "d0a71f5b56f4fab4f6aba4748b89bcb758d1f5b42ac70e18bf99d3d92b86f993",
+    "path_base": "case folder root",
+    "schema": "historical production record; not v0.1 CLI input"
+  }
+}

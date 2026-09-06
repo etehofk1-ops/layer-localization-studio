@@ -1,0 +1,150 @@
+{
+  "algorithm": "sha256",
+  "scope": "Binary files copied without modification from the original production folder",
+  "files": [
+    {
+      "file": "원본에셋/绚烂竞演_EN_원본.png",
+      "bytes": 679994,
+      "sha256": "708140fe5ed9aec0ee61e711f557976861ae8077bc865c223f64c30d11ad390c",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L0a_배경판.png",
+      "bytes": 432953,
+      "sha256": "fb3d764d9b2f7f86c2df3ed6fdeb7e0342426d7fbb5e02a3e74795b187d040e5",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L0b_나무프레임.png",
+      "bytes": 155794,
+      "sha256": "679fb728e3072002a5a8c1b7c225517aa9f02f1b79549231021b69a71c09455c",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L0c_캐릭터.png",
+      "bytes": 612928,
+      "sha256": "650142ff97af0702f9e271368dcb7d8cd9efcb86ebd8d927a1ca631731872e6f",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1a_흰베일_베이크.png",
+      "bytes": 9877,
+      "sha256": "cc789e6b277368373415d02b3d137b77ccd42234c7d050dc089b6c6e08160a65",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1b_글씨흰외곽선_베이크.png",
+      "bytes": 14857,
+      "sha256": "9d7164cc000e45aa13c1082af43c0524ba8f642b67b2c24dba9daba26030304d",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1c_프레임그림자_베이크.png",
+      "bytes": 37345,
+      "sha256": "263a95c8cb3602f62db417a1dd6077accfbc3fe2abf9cdf8c8cd14e466497f56",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L2_텍스트_한글.png",
+      "bytes": 84342,
+      "sha256": "07be71aa612460e4ad941a2ff6d0451132562afdce639e0a44d82e762ce55ebf",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/마스크와원본/L0c_캐릭터_페이드전.png",
+      "bytes": 602213,
+      "sha256": "962f826c88f53b537bf2ae2932d3dec32fa3bd52a7fc334ad2bb42ebac2a3df9",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/마스크와원본/M_캐릭터_페이드.png",
+      "bytes": 9448,
+      "sha256": "a95e48db0b7417c55070337a7c9a27005860e5c2b2987789ce30614be8f0e7e2",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/绚烂竞演_EN_KO.png",
+      "bytes": 712900,
+      "sha256": "58f7525c70871f7b237a121f983476cb66231250081a28b8f7aa5ac7a675f46d",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/레이어_구성.png",
+      "bytes": 174521,
+      "sha256": "679b9e4dbc9c8c3283a4eb714fc6ff975badda2a304f5017861cb6713d9bcd84",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/미리보기.png",
+      "bytes": 495781,
+      "sha256": "181896e628732ba4a91bd6f3651c5a02777736650cf9129489282cc2e18753d7",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/원본_1차_2차_대조.png",
+      "bytes": 743246,
+      "sha256": "2f476ff0d2458371c65828353063926d5a5118fe4c8e571cec0e7c20b31f93d5",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/원본_한글_대조.png",
+      "bytes": 2345656,
+      "sha256": "2d7d16eb01fb503f46f72f0fbdcc3ef3134500313f7ce9f0db7cc2bb73fe18bd",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "绚烂竞演_EN_KO.psd",
+      "bytes": 17278975,
+      "sha256": "fd362e5c35afdb1afb6b637fa46d516678fbb4081bdbaed313ca20f3dab75492",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/01_generated_textless_master.png",
+      "bytes": 1880040,
+      "sha256": "c22b9f84815a258dd90077f6372da01206ff02e471c2eced7ab6cec9a619cb9b",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/02_generated_frame_magenta.png",
+      "bytes": 1231899,
+      "sha256": "b528029a9b474cf941c7b7b854e56cb21c71f52abf5f9152bd263295d38d324d",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/03_generated_panel_magenta.png",
+      "bytes": 1533979,
+      "sha256": "ddf278a6a1c6bb26380ad2df169b8a2eff206550f3ddbbe0d6fd86bb6103ddd9",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/04_generated_character_magenta.png",
+      "bytes": 2166603,
+      "sha256": "4080210f9e4d282b811b7b3e3ac4a8d620ca36586e90eb8c4c8cf6b6baec62bd",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/05_generated_text_magenta.png",
+      "bytes": 1237352,
+      "sha256": "5665eb6dc521e6b13f4a78b6c2c7d9c5655226ece5394bbd337b3dd2104bf4c8",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/06_generated_character_retry_magenta.png",
+      "bytes": 2268676,
+      "sha256": "6c2c6837da2dc5bdf952184353a519b0a21a99f883647543618ded8f68733178",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/07_generated_text_retry_magenta.png",
+      "bytes": 1272217,
+      "sha256": "11b7ec1f2d55bf1850947d6e8100a13eb7aef50180ab5a384c69d979b29ed7ae",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/원본_밝기별_분석.png",
+      "bytes": 659126,
+      "sha256": "3b442a277c403890fe20de52516c188b0f531b21daee37fdf8ddd67b77b8429e",
+      "source_bytes_identical": true
+    }
+  ]
+}

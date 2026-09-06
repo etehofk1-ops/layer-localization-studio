@@ -8,6 +8,7 @@
 
 | 구성 | 역할 |
 | --- | --- |
+| [실제 제작 사례 3종](case-studies/README.md) | 원본/후보 비교, 분리 레이어, PSD, 생성 원본·실패·재시도와 검수 결과 |
 | [제작 스킬](skills/asset-localization/SKILL.md) | 분석·생성·후처리·검수의 순서와 판단 기준 |
 | [JSON 예시](skills/asset-localization/references/) | 레이어 분석, 생성 시도, 조립 스펙 |
 | `layer-studio` CLI | 원본 복사, 분석 통계, 생성물 보관, PNG·PSD 출력, 무결성 검사 |
@@ -15,7 +16,15 @@
 | [합성 테스트 예제](examples/demo.py) | 게임 이미지나 생성 API 없이 보관·PSD 경로 확인 |
 | [검증 기록](docs/verification.md) | 실제 실행한 검사와 확인하지 않은 범위 |
 
-이미지 생성은 에이전트가 사용 가능한 생성 도구로 수행합니다. CLI가 모델을 호출하거나 자동으로 번역·레이어를 추론하지는 않습니다. 제작 중 생성된 파일은 모두 보관하되, 이 코드 저장소에는 실제 게임 원본·후보 이미지·PSD·번역 데이터가 들어가지 않습니다.
+이미지 생성은 에이전트가 사용 가능한 생성 도구로 수행합니다. CLI가 모델을 호출하거나 자동으로 번역·레이어를 추론하지는 않습니다. 사용자가 요청한 실제 사례는 `case-studies/furuyoni/`에 별도 권리 표시와 함께 보관합니다. 전체 게임 파일과 번역 데이터베이스는 포함하지 않습니다.
+
+## 실제 사례: 찬란한 결투
+
+[![Radiant Duels 원본과 찬란한 결투 시험 후보](case-studies/furuyoni/radiant-duels/통합에셋/미리보기.png)](case-studies/furuyoni/radiant-duels/README.md)
+
+7개 레이어, 캐릭터 페이드 마스크, 기본 생성 5회와 재시도 2회를 사용한 메뉴 제작 사례입니다. **원본 일치 기준에 미달한 시험 후보**이며 게임 적용본은 아닙니다. 과정과 실패 이유를 포함해 [원본·레이어·PSD·생성 기록을 확인할 수 있습니다](case-studies/furuyoni/radiant-duels/README.md).
+
+[공격후: 원형 아트와 발광](case-studies/furuyoni/after-attack/README.md) · [동결: 색상과 숨은 RGB 분석](case-studies/furuyoni/ice-counter/README.md)
 
 ## 빠르게 실행
 
@@ -106,6 +115,6 @@ PNG 입력, 동일 크기 풀캔버스 레이어, normal 합성, 레이어 opaci
 
 ## 라이선스와 출처
 
-이 저장소의 코드·문서·스킬은 [MIT](LICENSE)로 제공합니다. 게임 이미지, 상표, 폰트, 번역 데이터, 생성물 및 외부 도구는 각자의 권리·이용 조건을 따르며 이 라이선스에 포함되지 않습니다. 코드 라이선스만으로 특정 게임 에셋의 제작·모금·배포 권한을 얻는 것은 아닙니다.
+이 저장소의 코드·설명 문서·스킬은 [MIT](LICENSE)로 제공합니다. 사례의 게임 이미지·생성물·PSD·인용된 게임 문구는 [별도 권리 안내](case-studies/ASSET-RIGHTS.md)를 따르며 MIT에 포함되지 않습니다. 게임 이미지, 상표, 폰트, 번역 데이터 및 외부 도구는 각자의 권리·이용 조건을 따릅니다. 코드 라이선스만으로 특정 게임 에셋의 제작·모금·배포 권한을 얻는 것은 아닙니다.
 
 방법론의 출처와 일반화 과정은 [PROVENANCE.md](PROVENANCE.md), 외부 의존성은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다. 저장소 공개 전에는 코드와 실제 제작 자료의 포함 범위를 다시 확인하세요.

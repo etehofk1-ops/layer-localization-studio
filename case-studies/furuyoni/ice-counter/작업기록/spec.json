@@ -1,0 +1,86 @@
+{
+  "asset_id": "冻花结晶_EN",
+  "text_ko": "동결",
+  "canvas_size": [
+    411,
+    153
+  ],
+  "layers": [
+    "레이어에셋/L1a_바탕그림자_베이크.png",
+    "레이어에셋/L0_붓바탕.png",
+    "레이어에셋/L1b_글씨외곽선_베이크.png",
+    "레이어에셋/L2_텍스트_한글.png"
+  ],
+  "alpha_from_source": false,
+  "source_pixels_used_for_final": false,
+  "generated_art_box": [
+    0,
+    47,
+    411,
+    136
+  ],
+  "generated_text_box": [
+    156,
+    7,
+    296,
+    109
+  ],
+  "effect_parameters": {
+    "shadow_rgb": [
+      17,
+      17,
+      26
+    ],
+    "shadow_offset": [
+      0,
+      6
+    ],
+    "shadow_blur_px": 3,
+    "shadow_opacity": 0.75,
+    "outline_radius_px": 3
+  },
+  "generated_color_correction": {
+    "art_original_luminance_p5_p50_p95": [
+      105.33333333333333,
+      130.66666666666666,
+      197.66666666666666
+    ],
+    "art_target_luminance_p5_p50_p95": [
+      72,
+      107,
+      168
+    ],
+    "text": {
+      "blue": {
+        "before_median": [
+          35.0,
+          149.0,
+          240.0
+        ],
+        "offset": [
+          19.0,
+          -2.0,
+          -7.0
+        ]
+      },
+      "white": {
+        "before_median": [
+          254.0,
+          254.0,
+          253.0
+        ],
+        "offset": [
+          -4.0,
+          -4.0,
+          -4.0
+        ]
+      }
+    }
+  },
+  "_casebook": {
+    "source_record_sha256": "41cc2bcdf17840b62c03366d534756b0420cc72901b2aaef280ca64c332f804e",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

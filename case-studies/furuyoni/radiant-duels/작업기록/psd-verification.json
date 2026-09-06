@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "layer_count": 7,
+  "size_px": [
+    745,
+    743
+  ],
+  "layers_bottom_to_top": [
+    {
+      "stack_index_bottom_to_top": 0,
+      "name": "L1c_프레임그림자_베이크",
+      "file": "레이어에셋/L1c_프레임그림자_베이크.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    },
+    {
+      "stack_index_bottom_to_top": 1,
+      "name": "L0a_배경판",
+      "file": "레이어에셋/L0a_배경판.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    },
+    {
+      "stack_index_bottom_to_top": 2,
+      "name": "L0b_나무프레임",
+      "file": "레이어에셋/L0b_나무프레임.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    },
+    {
+      "stack_index_bottom_to_top": 3,
+      "name": "L0c_캐릭터",
+      "file": "레이어에셋/L0c_캐릭터.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": true
+    },
+    {
+      "stack_index_bottom_to_top": 4,
+      "name": "L1a_흰베일_베이크",
+      "file": "레이어에셋/L1a_흰베일_베이크.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    },
+    {
+      "stack_index_bottom_to_top": 5,
+      "name": "L1b_글씨흰외곽선_베이크",
+      "file": "레이어에셋/L1b_글씨흰외곽선_베이크.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    },
+    {
+      "stack_index_bottom_to_top": 6,
+      "name": "L2_텍스트_한글",
+      "file": "레이어에셋/L2_텍스트_한글.png",
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "has_editable_mask": false
+    }
+  ],
+  "panel_top_to_bottom": [
+    "L2_텍스트_한글",
+    "L1b_글씨흰외곽선_베이크",
+    "L1a_흰베일_베이크",
+    "L0c_캐릭터",
+    "L0b_나무프레임",
+    "L0a_배경판",
+    "L1c_프레임그림자_베이크"
+  ],
+  "character_mask_present": true,
+  "mask_values_match": true,
+  "composite_check": {
+    "dark": {
+      "max_channel_delta": 3,
+      "mean_channel_delta": 0.15490679601711424
+    },
+    "light": {
+      "max_channel_delta": 2,
+      "mean_channel_delta": 0.15546081096949604
+    }
+  },
+  "embedded_preview_nonblank": true,
+  "photoshop_gui_opened": false,
+  "verification_reader": "psd_tools",
+  "_casebook": {
+    "source_record_sha256": "9bbf10c7800de9b13e4c0297711f4e1afc923e79171ca312fa5dee4898d25350",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

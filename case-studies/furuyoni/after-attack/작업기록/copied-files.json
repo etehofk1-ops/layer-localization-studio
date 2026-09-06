@@ -1,0 +1,66 @@
+{
+  "algorithm": "sha256",
+  "scope": "Binary files copied without modification from the original production folder",
+  "files": [
+    {
+      "file": "원본에셋/攻击后_EN_원본.png",
+      "bytes": 84452,
+      "sha256": "c5c7667fabc9251d005c9c99d73dd4766bf01c877c63e906e81563bc410a59a8",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L0_아트.png",
+      "bytes": 54725,
+      "sha256": "6bad25c61dd9b3553747ff1d6f491912bf92c6807fe2429ad01c11841ea9c75a",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L1_붉은발광_베이크.png",
+      "bytes": 33775,
+      "sha256": "084aed241804c1121b1b23bb47c07a01b57c598b036256eeefc9baa26ce43ade",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "레이어에셋/L2_텍스트_한글.png",
+      "bytes": 21917,
+      "sha256": "5549f4e274d33c923ccc72c4af686040d43297cb3a0d74820744d1a493d6e0a7",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/攻击后_EN_KO.png",
+      "bytes": 105129,
+      "sha256": "31fce479947faad0b3aeaf72ca68e8cbfdbdd131212d915d97653dd7b211ebb8",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "통합에셋/원본_한글_대조.png",
+      "bytes": 409454,
+      "sha256": "90d541949503962cb887d39e6e7d72ab1fc67081cce7fbfe600ba0f5bf8e83f5",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "攻击后_EN_KO.psd",
+      "bytes": 2047668,
+      "sha256": "02a8f7abd25f315720560a3177442e310088c201d39b4068e607b1afdacf31eb",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/rejected_checkerboard.png",
+      "bytes": 882318,
+      "sha256": "d38e6298fdf157523db6484b2962b2a4bde9ff96df9ca45999e259b1178949db",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/ring_generated_magenta.png",
+      "bytes": 1059443,
+      "sha256": "0cb8b612e175ca32245c5a46f96e2622d3f1b75328765796ebff46eb67bd9ef2",
+      "source_bytes_identical": true
+    },
+    {
+      "file": "작업기록/생성원본/text_generated_magenta.png",
+      "bytes": 1033486,
+      "sha256": "284254d1cd02051843c320d11a427db224a47e91b0883539d903aa5d9cc66280",
+      "source_bytes_identical": true
+    }
+  ]
+}

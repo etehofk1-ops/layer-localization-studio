@@ -1,0 +1,48 @@
+{
+  "psd_size": [
+    362,
+    377
+  ],
+  "layer_count": 3,
+  "library_iteration_order": "bottom_to_top",
+  "bottom_to_top": [
+    "L1_붉은발광_베이크",
+    "L0_아트",
+    "L2_텍스트_한글"
+  ],
+  "photoshop_panel_top_to_bottom": [
+    "L2_텍스트_한글",
+    "L0_아트",
+    "L1_붉은발광_베이크"
+  ],
+  "all_visible": true,
+  "all_normal_blend": true,
+  "embedded_preview_nonblank": true,
+  "render_comparisons": [
+    {
+      "background_rgb": [
+        20,
+        20,
+        24
+      ],
+      "max_delta": 2.0,
+      "mean_delta": 0.05168383721441447
+    },
+    {
+      "background_rgb": [
+        232,
+        231,
+        226
+      ],
+      "max_delta": 2.0,
+      "mean_delta": 0.03893049225493501
+    }
+  ],
+  "verified_with": "psd-tools reopen and compositing; Photoshop GUI not opened",
+  "_casebook": {
+    "source_record_sha256": "03a15b8587571759bd6224de97b7be8e41792602f6a539b437cf40aa74810901",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

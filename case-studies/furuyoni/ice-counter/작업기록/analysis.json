@@ -1,0 +1,288 @@
+{
+  "asset_id": "冻花结晶_EN",
+  "source": {
+    "path": "원본에셋/冻花结晶_EN_원본.png",
+    "sha256": "ca3be5ea3608c0085c1d5fa465f6222060f564c0c220b2c17ff05b353369eeee",
+    "size_px": [
+      411,
+      153
+    ]
+  },
+  "translation": {
+    "text": "동결",
+    "source": "Historical project metadata: asset_meta.py and ASSET-AUDIT-2026-08-28.md; full source documents not bundled.",
+    "long_form_in_ui_table": "동결 토큰",
+    "color_split": {
+      "동": "blue",
+      "결": "white"
+    }
+  },
+  "observations": {
+    "analysis_saved_before_first_generation": true,
+    "alpha_checked": true,
+    "source_alpha_range": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.37269214255045086,
+    "semitransparent_fraction": 0.23497606666348617,
+    "measurements": {
+      "blue_ink": {
+        "sample_count": 2642,
+        "color_rgb": [
+          54,
+          147,
+          233
+        ],
+        "color_hex": "#3693E9",
+        "color_range_p5_p95": [
+          [
+            33.0,
+            104.0,
+            171.0
+          ],
+          [
+            106.94999999999982,
+            170.0,
+            255.0
+          ]
+        ],
+        "observed_sample_bbox_px": [
+          61,
+          6,
+          199,
+          86
+        ],
+        "median_alpha": 255.0
+      },
+      "white_ink": {
+        "sample_count": 3279,
+        "color_rgb": [
+          250,
+          250,
+          249
+        ],
+        "color_hex": "#FAFAF9",
+        "color_range_p5_p95": [
+          [
+            210.0,
+            211.0,
+            209.0
+          ],
+          [
+            255.0,
+            255.0,
+            255.0
+          ]
+        ],
+        "observed_sample_bbox_px": [
+          151,
+          42,
+          402,
+          109
+        ],
+        "median_alpha": 255.0
+      },
+      "gold_decoration": {
+        "sample_count": 0,
+        "observation": "No visible samples in proposed region. Do not infer a solid layer from hidden RGB."
+      },
+      "brush_base": {
+        "sample_count": 5961,
+        "color_rgb": [
+          29,
+          29,
+          35
+        ],
+        "color_hex": "#1D1D23",
+        "color_range_p5_p95": [
+          [
+            17.0,
+            17.0,
+            26.0
+          ],
+          [
+            158.0,
+            160.0,
+            148.0
+          ]
+        ],
+        "observed_sample_bbox_px": [
+          13,
+          112,
+          391,
+          137
+        ],
+        "median_alpha": 218.0
+      },
+      "navy_base": {
+        "sample_count": 977,
+        "color_rgb": [
+          17,
+          17,
+          26
+        ],
+        "color_hex": "#11111A",
+        "color_range_p5_p95": [
+          [
+            17.0,
+            17.0,
+            26.0
+          ],
+          [
+            19.0,
+            19.0,
+            28.0
+          ]
+        ],
+        "observed_sample_bbox_px": [
+          9,
+          135,
+          286,
+          152
+        ],
+        "median_alpha": 88.0
+      },
+      "brush_body": {
+        "sample_count": 5110,
+        "color_rgb": [
+          107,
+          110,
+          102
+        ],
+        "color_hex": "#6B6E66",
+        "color_range_p5_p95": [
+          [
+            72.0,
+            73.0,
+            67.0
+          ],
+          [
+            168.0,
+            171.0,
+            158.0
+          ]
+        ],
+        "median_alpha": 255.0
+      }
+    },
+    "decomposition_is_inferred": true,
+    "resolution_note": "Attached sprite is 411x153; older manifest references 411x220. Preserve attached sprite size.",
+    "display_size_note": "Existing display ratio marked 비율불일치; not verified runtime size.",
+    "hidden_gold": {
+      "sample_count": 1509,
+      "visible_alpha_gt_8": 2,
+      "alpha_min_max": [
+        0,
+        17
+      ]
+    },
+    "viewed_on_dark_and_light": true
+  },
+  "layers_bottom_to_top": [
+    {
+      "name": "L1a_바탕그림자_베이크",
+      "action": "postprocess",
+      "color_rgb": [
+        17,
+        17,
+        26
+      ],
+      "opacity_initial": 0.75,
+      "offset_px_initial": [
+        0,
+        5
+      ],
+      "blur_px_initial": 3
+    },
+    {
+      "name": "L0_붓바탕",
+      "action": "generate",
+      "role": "Visible mottled pale-grey/olive brush smear, ragged ends and scraped horizontal streaks; no gold ornament",
+      "bbox_px": [
+        0,
+        47,
+        411,
+        136
+      ],
+      "color": {
+        "sample_count": 5110,
+        "color_rgb": [
+          107,
+          110,
+          102
+        ],
+        "color_hex": "#6B6E66",
+        "color_range_p5_p95": [
+          [
+            72.0,
+            73.0,
+            67.0
+          ],
+          [
+            168.0,
+            171.0,
+            158.0
+          ]
+        ],
+        "median_alpha": 255.0
+      }
+    },
+    {
+      "name": "L1b_글씨외곽선_베이크",
+      "action": "postprocess",
+      "color_rgb": [
+        0,
+        0,
+        0
+      ],
+      "outline_radius_px_initial": 3
+    },
+    {
+      "name": "L2_텍스트_한글",
+      "action": "generate",
+      "text": "동결",
+      "blue_part": "동",
+      "white_part": "결",
+      "blue_rgb": [
+        54,
+        147,
+        233
+      ],
+      "white_rgb": [
+        250,
+        250,
+        249
+      ],
+      "text_bbox_px": [
+        53,
+        6,
+        401,
+        109
+      ]
+    }
+  ],
+  "planned_generation_calls": 2,
+  "generation_plan": [
+    "Regenerate the grey textured art without lettering; no separate frame/background split",
+    "Generate Korean lettering in blue/white without black outline",
+    "Bake outline and shadow separately using measured parameters"
+  ],
+  "source_pixel_cutout_allowed": false,
+  "source_alpha_inheritance_allowed": false,
+  "unresolved_observations": [
+    "Exact original source layer structure is inferred, not a recovered PSD.",
+    "Original whole-image alpha may include interaction between ink and shadow; fit generated layers independently."
+  ],
+  "status": "candidate_generated_and_reviewed",
+  "analysis_revisions_before_generation": [
+    "Provisional gold layer removed after alpha compositing: gold decoration samples are invisible.",
+    "Visible navy lower region retained as shadow/effect, not a solid rectangular bar."
+  ],
+  "actual_generation_calls": 3,
+  "casebook_note": {
+    "source_record_sha256": "b5fb9a7dfc37bc91194957b6aaddd96809ac9b40f2d8076f6ffdd319dc138fe8",
+    "path_base": "case folder root",
+    "schema": "historical production record; not v0.1 CLI input"
+  }
+}

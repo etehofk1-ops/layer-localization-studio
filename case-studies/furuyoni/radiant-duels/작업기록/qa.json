@@ -1,0 +1,68 @@
+{
+  "status": "CANDIDATE_NOT_APPROVED_FOR_GAME",
+  "executed": true,
+  "source_sha256_unchanged": "708140fe5ed9aec0ee61e711f557976861ae8077bc865c223f64c30d11ad390c",
+  "size_px": [
+    745,
+    743
+  ],
+  "generation_calls": 7,
+  "base_calls": 5,
+  "retry_calls": 2,
+  "source_pixels_cutout_or_erasure": false,
+  "source_alpha_copied": false,
+  "chroma_check": {
+    "투명%": 42.4,
+    "반투명%": 9.11,
+    "불투명영역_마젠타%": 0.0,
+    "투명영역_마젠타%": 0.0
+  },
+  "psd_validation": "PASS",
+  "legacy_full_gate": {
+    "status": "BLOCKED_BY_LEGACY_HELPER",
+    "error": "TypeError: 'NoneType' object is not subscriptable"
+  },
+  "outside_text_screen": {
+    "match_fraction": 0.06270608137167762,
+    "required_fraction": 0.95,
+    "threshold_max_rgba_channel_delta": 10,
+    "excluded_text_box_exclusive": [
+      86,
+      367,
+      543,
+      632
+    ],
+    "visible_sample_count": 209262,
+    "verdict": "FAIL"
+  },
+  "alpha_silhouette_iou": 0.9445176452702061,
+  "visual_review": {
+    "source_size_checked": true,
+    "dark_light_backgrounds_checked": true,
+    "korean_readable": true,
+    "no_old_english_visible": true,
+    "separate_character_mask": true,
+    "remaining_differences": [
+      "Portrait face proportions, clothing detail and hair contour still differ from original.",
+      "Lattice spacing and line texture are regenerated and not pixel-identical.",
+      "Korean brush script has different ink footprint from the English."
+    ],
+    "display_reference_px": [
+      447,
+      446
+    ],
+    "display_reference_source": "out/asset-display-ratio.csv:72",
+    "display_reference_is_not_live_game_qa": true
+  },
+  "bg_diag_note": "Global tone correction in bg_diag also shifts alpha and worsened its score; its 99.8 percent residual is not an isolated structural metric and is not used for approval.",
+  "images_edited_changed": false,
+  "game_injected": false,
+  "in_game_qa": false,
+  "zip_created": false,
+  "_casebook": {
+    "source_record_sha256": "8ee66e4c1a0c1c7b592bb2c791718c5c2f40ce3b8e1e1592c3f49d932d471e96",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

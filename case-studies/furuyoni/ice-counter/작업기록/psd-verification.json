@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "layer_count": 4,
+  "size_px": [
+    411,
+    153
+  ],
+  "layers_bottom_to_top": [
+    {
+      "stack_index_bottom_to_top": 0,
+      "name": "L1a_바탕그림자_베이크",
+      "file": "레이어에셋/L1a_바탕그림자_베이크.png",
+      "size_px": [
+        411,
+        153
+      ],
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "effect_parameters": {
+        "shadow_rgb": [
+          17,
+          17,
+          26
+        ],
+        "shadow_offset": [
+          0,
+          6
+        ],
+        "shadow_blur_px": 3,
+        "shadow_opacity": 0.75,
+        "outline_radius_px": 3
+      }
+    },
+    {
+      "stack_index_bottom_to_top": 1,
+      "name": "L0_붓바탕",
+      "file": "레이어에셋/L0_붓바탕.png",
+      "size_px": [
+        411,
+        153
+      ],
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "effect_parameters": null
+    },
+    {
+      "stack_index_bottom_to_top": 2,
+      "name": "L1b_글씨외곽선_베이크",
+      "file": "레이어에셋/L1b_글씨외곽선_베이크.png",
+      "size_px": [
+        411,
+        153
+      ],
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "effect_parameters": {
+        "shadow_rgb": [
+          17,
+          17,
+          26
+        ],
+        "shadow_offset": [
+          0,
+          6
+        ],
+        "shadow_blur_px": 3,
+        "shadow_opacity": 0.75,
+        "outline_radius_px": 3
+      }
+    },
+    {
+      "stack_index_bottom_to_top": 3,
+      "name": "L2_텍스트_한글",
+      "file": "레이어에셋/L2_텍스트_한글.png",
+      "size_px": [
+        411,
+        153
+      ],
+      "opacity": 255,
+      "blend_mode": "normal",
+      "visible": true,
+      "pixel_type": "raster",
+      "effect_parameters": null
+    }
+  ],
+  "photoshop_panel_top_to_bottom": [
+    "L2_텍스트_한글",
+    "L1b_글씨외곽선_베이크",
+    "L0_붓바탕",
+    "L1a_바탕그림자_베이크"
+  ],
+  "reopened_with": "psd_tools",
+  "composite_comparison": {
+    "dark": {
+      "max_channel_delta": 2,
+      "mean_channel_delta": 0.11129134000180228
+    },
+    "light": {
+      "max_channel_delta": 1,
+      "mean_channel_delta": 0.10392315888236885
+    }
+  },
+  "embedded_preview_nonblank": true,
+  "photoshop_gui_opened": false,
+  "text_is_raster_not_live_type": true,
+  "_casebook": {
+    "source_record_sha256": "071bcfedb7f31514ca52d2f5851662f3a3b47a6520ebf4c3612537d3de9b9594",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

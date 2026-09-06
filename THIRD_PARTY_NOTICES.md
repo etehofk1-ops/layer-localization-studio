@@ -8,7 +8,7 @@ Dependencies are installed through pip; their source code and licenses are not r
 | psd-tools and its composite extras | Write and reopen raster-layer PSD, verify composition | https://github.com/psd-tools/psd-tools |
 | setuptools | Python package build | https://github.com/pypa/setuptools |
 
-Transitive dependencies retain their own licenses. No game art, fonts, model weights, image-generation API clients or upstream agent plugin runtimes are vendored.
+Transitive dependencies retain their own licenses. Historical game-art case studies are stored separately under `case-studies/furuyoni/`; see [their rights notice](case-studies/ASSET-RIGHTS.md). Fonts, game executables, model weights, image-generation API clients and upstream agent plugin runtimes are not vendored.
 
 API references checked during implementation:
 

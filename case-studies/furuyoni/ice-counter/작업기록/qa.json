@@ -1,0 +1,58 @@
+{
+  "status": "CANDIDATE_NOT_APPROVED_FOR_GAME",
+  "executed": true,
+  "source_sha256_unchanged": "ca3be5ea3608c0085c1d5fa465f6222060f564c0c220b2c17ff05b353369eeee",
+  "output_size_px": [
+    411,
+    153
+  ],
+  "rgba": true,
+  "source_pixels_or_alpha_copied_into_final": false,
+  "chroma_check": {
+    "투명%": 41.4,
+    "반투명%": 23.81,
+    "불투명영역_마젠타%": 0.0,
+    "투명영역_마젠타%": 0.0
+  },
+  "visual_review": {
+    "executed": true,
+    "surfaces": [
+      "dark background",
+      "light background",
+      "native 411x153 sprite"
+    ],
+    "korean_readable": true,
+    "old_english_or_gold_visible": false,
+    "blue_white_assignment": "동 blue, 결 white",
+    "remaining_differences": [
+      "Generated brush silhouette and grain differ from source.",
+      "Two Korean brush characters occupy a narrower, heavier title than the English."
+    ],
+    "verdict": "readable_candidate_with_fidelity_differences"
+  },
+  "outside_text_fidelity": {
+    "status": "FAIL",
+    "measurement": "Independent RGBA channel-difference screen, not a full ko_patch_lib gate run",
+    "excluded_source_text_box_exclusive": [
+      47,
+      0,
+      408,
+      115
+    ],
+    "visible_background_sample_count": 8700,
+    "max_channel_delta_tolerance": 10,
+    "match_fraction": 0.07080459770114943,
+    "required_fraction": 0.95
+  },
+  "full_legacy_gate": "not executed; current helper expects L4 text naming and cannot consume this L0/L1/L2 spec reliably",
+  "production_images_edited_written": false,
+  "game_injected": false,
+  "in_game_qa_executed": false,
+  "psd_structural_and_composite_check": "PASS",
+  "_casebook": {
+    "source_record_sha256": "fda056399df80c3835942df2be8f9b2c1afa33af4fa605e3bb5328729ff3d655",
+    "record_date": "2026-09-05",
+    "path_base": "case folder root",
+    "schema": "historical; not v0.1 CLI input"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "backend": "built-in image_gen",
+  "historical_date": "2026-09-05",
+  "generation_calls": 3,
+  "planned_calls": 2,
+  "retry_calls": 1,
+  "path_base": "case folder root",
+  "source_record_sha256": "f01e3427cb9955fd56df3234678e1958c656df083dde8bca653720273e2269a8",
+  "normalization": "Host paths and tool-output locations removed; exact prompt text and raw output bytes preserved. Retry mapping and selection are summarized from production records.",
+  "calls": [
+    {
+      "call": 1,
+      "role": null,
+      "prompt": "Use case: game UI background-art layer regeneration for a Korean localization. Image 1 is the original sprite; image 2 shows its REAL visible appearance composited on dark and light grounds. Important: the gold striped shapes in the raw first image are hidden RGB under transparent pixels. They are NOT part of the visible design. Do NOT generate gold shapes. Regenerate only the visible mottled grey/olive horizontal painted brush swash underneath the words Ice Counter. Remove all lettering and their black outlines by generating clean new art. The swash has a broad rough irregular left end, granular scuffed olive-grey texture (midtones approx RGB107,110,102 with offwhite scratches), tapering dry-brush strokes extending horizontally to the right, a slightly rising/slanted lower contour. Match the precise visible swash silhouette and scale from image 2. No extra frame, no gold trim, no scroll, no ice crystals, no text, no symbols, no shadow. Do not make a rectangular panel or a smooth gradient. Keep grain and gaps in brushwork. Everything outside this narrow brush shape, including holes, must be genuinely transparent. PNG with a TRUE ALPHA CHANNEL, not a checkerboard pattern, not white or black background, not a visual simulation of transparency. Entire brush shape visible with at least 6% transparent margins. Wide horizontal single asset, large on canvas; preserve original approximately 4.6:1 visible brush proportions.",
+      "raw_file": "작업기록/생성원본/01_generated_art_rgba_rejected.png",
+      "sha256": "fec4298d8c8ed6e3c211dff20dc0ed026e9742d76f1f858955f4c05ac3399292",
+      "references": [
+        "원본에셋/冻花结晶_EN_원본.png",
+        "작업기록/원본_밝기별_분석.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "rejected",
+      "selected_for_final_layer_pixels": false,
+      "retry_of": null,
+      "notes": "RGB output with baked checkerboard; no real alpha"
+    },
+    {
+      "call": 2,
+      "role": null,
+      "prompt": "Production 2D game UI art layer regeneration. Reference 1 is original sprite; reference 2 shows actual visible art with correct alpha compositing. Regenerate a NEW CLEAN ART LAYER consisting only of the mottled grey/olive horizontal dry-brush paint swash below the lettering. Its grey body has granular scratched weathered texture, a rough irregular wide left end, thin scraped horizontal streaks trailing to the right, and a gently rising lower contour. Preserve the visible swash silhouette from reference 2; approximate visible core proportions 4.6 wide to 1 tall. Midtones RGB107,110,102; mixed darker grey and pale grey scuffs. NO text or letter ghosts, NO blue, NO gold objects or bands, NO outline, NO shadow, NO background rectangle, NO frame. All surrounding area and all holes between paint streaks must be UNIFORM PURE MAGENTA #FF00FF for chroma key. Do not fade the whole swash into the key; core paint is opaque with irregular natural brush gaps. No checkerboard, no presentation board, no labels. Only one large horizontal brush swash, fully visible with at least 7 percent magenta margins on each side. No cropped tips.",
+      "raw_file": "작업기록/생성원본/02_generated_art_magenta.png",
+      "sha256": "c3a947629ee7eea3957b26de66bdedcda2565e466aa87207e8c7cf32d6601e98",
+      "references": [
+        "원본에셋/冻花结晶_EN_원본.png",
+        "작업기록/원본_밝기별_분석.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "generated_for_review",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": 1,
+      "notes": ""
+    },
+    {
+      "call": 3,
+      "role": null,
+      "prompt": "Production Korean game UI lettering layer. Use the attached Ice Counter letters as the handwriting/style reference, same hand not typeset. Create exactly two Korean syllables '동결'. First syllable '동': vivid cool blue RGB54,147,233 matching Ice, angular lively slightly leaning hand-painted strokes with tapered ends, clean readable Hangul. Second syllable '결': warm white RGB250,250,249 matching Counter, lively flowing brush/cursive stroke character, not a heavy block font. Keep both syllables clearly readable. Arrange '동' left and slightly raised, '결' right and about one quarter of a character lower; close together as one connected title. Similar character sizes, blue may be slightly taller. Flat solid ink colors; texture and stroke character from original. NO black outline, NO shadow, NO glow, NO bevel, NO gradients: those will be added separately. NO brush panel, NO gold, NO frame, NO illustrations, NO English, NO additional text. ALL background and all letter counters/holes must be UNIFORM PURE MAGENTA #FF00FF. Leave generous magenta margins around the complete lettering and no clipped strokes.",
+      "raw_file": "작업기록/생성원본/03_generated_text_magenta.png",
+      "sha256": "756a2c110ae972b9f47834201b8caa982a8b4b94f2bbf8133df7c8716d092402",
+      "references": [
+        "원본에셋/冻花结晶_EN_원본.png"
+      ],
+      "references_provenance": "original generation record",
+      "status": "generated_for_review",
+      "selected_for_final_layer_pixels": true,
+      "retry_of": null,
+      "notes": ""
+    }
+  ]
+}
