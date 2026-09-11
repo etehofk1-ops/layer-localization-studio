@@ -1,6 +1,8 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 
@@ -122,6 +124,100 @@ class WorkflowTests(unittest.TestCase):
     def test_manifest_path_cannot_escape_job(self):
         with self.assertRaisesRegex(ValueError, "leaves"):
             inside(self.root, "../elsewhere.txt")
+
+    def directory_link(self, link, target):
+        # All fixture paths, including junction targets, stay inside this test's temp root.
+        self.assertTrue(link.resolve().is_relative_to(self.root.resolve()))
+        self.assertTrue(target.resolve().is_relative_to(self.root.resolve()))
+        if os.name == "nt":
+            env = dict(os.environ, LAYER_TEST_LINK=str(link), LAYER_TEST_TARGET=str(target))
+            subprocess.run([
+                "powershell.exe", "-NoProfile", "-NonInteractive", "-Command",
+                "$ErrorActionPreference='Stop'; New-Item -ItemType Junction "
+                "-Path $env:LAYER_TEST_LINK -Target $env:LAYER_TEST_TARGET | Out-Null",
+            ], env=env, check=True, capture_output=True)
+            self.addCleanup(os.rmdir, link)
+        else:
+            link.symlink_to(target, target_is_directory=True)
+            self.addCleanup(link.unlink)
+        self.assertEqual(link.resolve(), target.resolve())
+
+    def test_persisted_asset_id_is_rejected_before_any_output(self):
+        output, job = self.fixture()
+        metadata = read(job / "job.json")
+        spec = read(output / "spec.json")
+        spec["revision"] = "v002"
+        self.rewrite(output / "spec.json", spec)
+        for invalid in ("../escaped", str(self.root / "absolute"), "C:\\escape", "CON", "", None):
+            with self.subTest(asset_id=invalid):
+                metadata["asset_id"] = invalid
+                self.rewrite(job / "job.json", metadata)
+                before = set(self.root.rglob("*"))
+                with self.assertRaisesRegex(ValueError, "identifier|Reserved Windows"):
+                    build(job, output / "spec.json")
+                self.assertEqual(set(self.root.rglob("*")), before)
+                with self.assertRaisesRegex(ValueError, "identifier|Reserved Windows"):
+                    verify(job, "v001")
+                with self.assertRaisesRegex(ValueError, "identifier|Reserved Windows"):
+                    archive_attempt(job, output / "record-0.json")
+
+    def test_archive_rejects_outward_generation_directory_link(self):
+        output, job = self.fixture()
+        link = job / "작업기록" / "generations"
+        target = self.root / "outside-generations"
+        link.rename(target)
+        self.directory_link(link, target)
+        record = read(output / "record-0.json")
+        record["id"] = "new-attempt"
+        self.rewrite(output / "new-record.json", record)
+        before = set(target.rglob("*"))
+        with self.assertRaisesRegex(ValueError, "leaves"):
+            archive_attempt(job, output / "new-record.json")
+        self.assertEqual(set(target.rglob("*")), before)
+
+    def test_build_preflights_all_outward_output_directory_links(self):
+        for index, relative in enumerate(("레이어에셋", "통합에셋", "작업기록/builds")):
+            with self.subTest(parent=relative):
+                output = self.root / f"fixture-{index}"
+                demo_module.demo(output)
+                job = output / "demo-job"
+                link, target = job / relative, self.root / f"outside-{index}"
+                link.rename(target)
+                self.directory_link(link, target)
+                spec = read(output / "spec.json")
+                spec["revision"] = "v002"
+                self.rewrite(output / "spec.json", spec)
+                before = set(self.root.rglob("*"))
+                with self.assertRaisesRegex(ValueError, "leaves"):
+                    build(job, output / "spec.json")
+                self.assertEqual(set(self.root.rglob("*")), before)
+
+    def test_verify_rejects_outward_build_record_directory_link(self):
+        _, job = self.fixture()
+        link, target = job / "작업기록" / "builds" / "v001", self.root / "outside-record"
+        link.rename(target)
+        self.directory_link(link, target)
+        with self.assertRaisesRegex(ValueError, "leaves"):
+            verify(job, "v001")
+
+    def test_build_rejects_dangling_outward_psd_link(self):
+        output, job = self.fixture()
+        link, target = job / "synthetic-v002.psd", self.root / "outside.psd"
+        try:
+            link.symlink_to(target)
+        except OSError as error:
+            if os.name == "nt" and getattr(error, "winerror", None) == 1314:
+                self.skipTest("Windows account cannot create file symlinks; directory junction cases still run.")
+            raise
+        self.addCleanup(link.unlink)
+        spec = read(output / "spec.json")
+        spec["revision"] = "v002"
+        self.rewrite(output / "spec.json", spec)
+        before = set(self.root.rglob("*"))
+        with self.assertRaisesRegex(ValueError, "leaves"):
+            build(job, output / "spec.json")
+        self.assertFalse(target.exists())
+        self.assertEqual(set(self.root.rglob("*")), before)
 
     def test_recipe_code_is_archived_without_execution(self):
         output, job = self.fixture()

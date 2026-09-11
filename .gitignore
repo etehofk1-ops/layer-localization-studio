@@ -24,7 +24,7 @@ private/
 .DS_Store
 Thumbs.db
 
-# User-requested historical case studies in this private repository only.
+# Selected historical case studies; media retain their separate rights notice.
 !/case-studies/furuyoni/after-attack/**/*.png
 !/case-studies/furuyoni/after-attack/*.psd
 !/case-studies/furuyoni/ice-counter/**/*.png

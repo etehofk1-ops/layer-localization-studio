@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=84.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "layer-localization-studio"
-version = "0.1.0"
+version = "0.1.1"
 description = "Analysis-first, traceable game UI asset localization workflow"
 requires-python = ">=3.11"
 license = "MIT"

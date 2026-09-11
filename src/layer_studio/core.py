@@ -113,14 +113,15 @@ def init_job(source, job, asset_id, locale):
 
 
 def source_checked(job):
-    metadata = read(Path(job) / "job.json")
+    metadata = read(inside(job, "job.json"))
+    identifier(metadata["asset_id"])
     source = inside(job, metadata["source"]["file"])
     require(sha(source) == metadata["source"]["sha256"], "Archived original changed.")
     return metadata, source
 
 
 def analysis_checked(job):
-    analysis = read(Path(job) / RECORDS / "analysis.json")
+    analysis = read(inside(job, f"{RECORDS}/analysis.json"))
     require(bool(analysis.get("reviewed_by", "").strip()) and analysis.get("viewed_on_dark_and_light") is True,
             "Finish the source analysis and record the reviewer first.")
     translation = analysis.get("translation", {})
@@ -146,19 +147,19 @@ def archive_attempt(job, record_file):
         require(isinstance(record.get(key), str) and record[key].strip(), f"Missing attempt {key}.")
     require(record["outcome"] in ("candidate", "rejected"), "Archive outcome must be candidate or rejected.")
     require(record.get("kind") in ("generation", "test_fixture"), "Record kind: generation or test_fixture.")
-    root = job / RECORDS / "generations"
+    root = inside(job, f"{RECORDS}/generations")
     existing = list(root.glob("*/record.json")) if root.exists() else []
     parent = record.get("retry_of")
     if parent:
         identifier(parent)
-        require((root / parent / "record.json").is_file(), "Retry must reference an archived attempt.")
+        require(inside(job, f"{RECORDS}/generations/{parent}/record.json").is_file(), "Retry must reference an archived attempt.")
     raw = (record_file.parent / record["output"]).resolve()
     png(raw)
     require(sha(raw) != metadata["source"]["sha256"], "Original bytes cannot be registered as generated output.")
     references = [(record_file.parent / p).resolve() for p in record.get("references", [])]
     for reference in references:
         png(reference)
-    destination = root / attempt
+    destination = inside(job, f"{RECORDS}/generations/{attempt}")
     destination.mkdir(parents=True, exist_ok=False)
     shutil.copyfile(raw, destination / "raw.png")
     refs = []
@@ -178,9 +179,9 @@ def archive_attempt(job, record_file):
 
 
 def attempt_checked(job, attempt):
-    base = Path(job) / RECORDS / "generations" / identifier(attempt)
-    record = read(base / "record.json")
-    require(sha(base / "analysis.json") == record["analysis_sha256"], "Changed analysis snapshot.")
+    base = inside(job, f"{RECORDS}/generations/{identifier(attempt)}")
+    record = read(inside(base, "record.json"))
+    require(sha(inside(base, "analysis.json")) == record["analysis_sha256"], "Changed analysis snapshot.")
     for item in [record["raw"], *record["references"]]:
         require(sha(inside(base, item["file"])) == item["sha256"], f"Changed generation evidence: {attempt}.")
     return record
@@ -260,10 +261,11 @@ def build(job, spec_file):
         require(im.size == size, "Layers must already be placed on the original-size full canvas.")
         require(sha(path) != metadata["source"]["sha256"], "Do not use the original file as a generated layer.")
         inputs.append((path, im))
-    destination = job / COMPOSITES / revision
-    layer_dir = job / LAYERS / revision
-    record_dir = job / RECORDS / "builds" / revision
-    psd_path = job / f"{metadata['asset_id']}-{revision}.psd"
+    # Check the complete resolved destination set before creating any output.
+    destination = inside(job, f"{COMPOSITES}/{revision}")
+    layer_dir = inside(job, f"{LAYERS}/{revision}")
+    record_dir = inside(job, f"{RECORDS}/builds/{revision}")
+    psd_path = inside(job, f"{metadata['asset_id']}-{revision}.psd")
     for path in (destination, layer_dir, record_dir, psd_path):
         require(not path.exists(), "Revision already exists, including partial builds; choose a new revision.")
     for directory in (destination, layer_dir, record_dir):
@@ -329,13 +331,14 @@ def verify(job, revision):
     job = Path(job).resolve()
     metadata, _ = source_checked(job)
     identifier(revision)
-    record_dir = job / RECORDS / "builds" / revision
-    manifest = read(record_dir / "manifest.json")
+    record_dir = inside(job, f"{RECORDS}/builds/{revision}")
+    manifest = read(inside(record_dir, "manifest.json"))
     require(bool(manifest.get("files")), "Empty manifest.")
     for item in manifest["files"]:
         path = inside(job, item["file"])
         require(path.stat().st_size == item["bytes"] and sha(path) == item["sha256"], f"Changed file: {item['file']}")
-    layers = read(record_dir / "spec.json")["layers_bottom_to_top"]
-    result = check_psd(job / f"{metadata['asset_id']}-{revision}.psd", png(job / COMPOSITES / revision / "candidate.png"), layers)
+    layers = read(inside(record_dir, "spec.json"))["layers_bottom_to_top"]
+    result = check_psd(inside(job, f"{metadata['asset_id']}-{revision}.psd"),
+                       png(inside(job, f"{COMPOSITES}/{revision}/candidate.png")), layers)
     return {"structural_status": "PASS", "verified_files": len(manifest["files"]), "psd": result,
             "release_approved": False, "note": "Integrity and PSD checks do not approve visual fidelity or game integration."}

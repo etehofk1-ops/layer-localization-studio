@@ -2,7 +2,7 @@
 
 게임 UI 이미지의 **원본 분석 → 레이어 생성 → 현지화 → PNG·PSD 조립 → 보관·검수**를 재사용할 수 있게 정리한 제작 도구와 에이전트 스킬입니다.
 
-후루요니 한글패치에서 발전시킨 제작 방식을 게임에 종속되지 않는 형태로 옮겼습니다. 현재는 오픈소스 공개를 준비하는 **비공개 저장소**입니다. 랜딩페이지나 패치 배포 서버가 아니라, 우리가 실제 제작할 때 쓰는 작업 구조를 관리합니다.
+후루요니 한글패치에서 발전시킨 제작 방식을 게임에 종속되지 않는 형태로 옮긴 **오픈소스 제작 도구**입니다. 실제 제작에 쓰는 코드·스킬·검수 절차와 사례를 함께 제공합니다. 코드와 스킬은 MIT이며, 게임 이미지·PSD에는 [별도 권리 안내](case-studies/ASSET-RIGHTS.md)가 적용됩니다.
 
 ## 제작 전후: 일본어 메뉴를 한국어 에셋으로
 
@@ -38,6 +38,7 @@ Python 3.11 이상이 필요합니다. Windows PowerShell에서 저장소 루트
 
 ```powershell
 py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade "pip>=26.2.0" "setuptools>=84.0.0"
 .\.venv\Scripts\python.exe -m pip install -e .
 .\.venv\Scripts\python.exe examples/demo.py jobs/demo-001
 .\.venv\Scripts\layer-studio.exe verify jobs/demo-001/demo-job v001
@@ -123,4 +124,4 @@ PNG 입력, 동일 크기 풀캔버스 레이어, normal 합성, 레이어 opaci
 
 이 저장소의 코드·설명 문서·스킬은 [MIT](LICENSE)로 제공합니다. 사례의 게임 이미지·생성물·PSD·인용된 게임 문구는 [별도 권리 안내](case-studies/ASSET-RIGHTS.md)를 따르며 MIT에 포함되지 않습니다. 게임 이미지, 상표, 폰트, 번역 데이터 및 외부 도구는 각자의 권리·이용 조건을 따릅니다. 코드 라이선스만으로 특정 게임 에셋의 제작·모금·배포 권한을 얻는 것은 아닙니다.
 
-방법론의 출처와 일반화 과정은 [PROVENANCE.md](PROVENANCE.md), 외부 의존성은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다. 저장소 공개 전에는 코드와 실제 제작 자료의 포함 범위를 다시 확인하세요.
+방법론의 출처와 일반화 과정은 [PROVENANCE.md](PROVENANCE.md), 외부 의존성은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다. [보안 정책](SECURITY.md)과 [2026-09-11 공개 전 점검 기록](docs/security-review-2026-09-11.md)에서 입력 파일의 신뢰 범위, 개인정보 보관 방식, 점검 결과를 확인할 수 있습니다.
