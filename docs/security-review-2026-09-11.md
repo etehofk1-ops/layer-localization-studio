@@ -15,7 +15,13 @@
 | 성공 사례 화면 | 게임 화면과 공개용 닉네임. 원본·적용본·레이어·PSD 파일 보존 |
 | GitHub 부가 자료 | 기존 이슈/PR·릴리스·Actions 실행/아티팩트 없음. Wiki·Pages·Discussions 비활성 |
 
-위 수치는 수정 전 이력의 고유 객체 기준입니다. 공개 준비 커밋은 별도로 최종 검사합니다. 작업 폴더, 가상환경, 원본 점검 로그는 공개 파일에 포함하지 않습니다. 이미지·PSD의 공개 열람과 재사용 권한은 구분하며 [사례 권리 안내](../case-studies/ASSET-RIGHTS.md)를 유지합니다.
+위 수치는 수정 전 이력의 고유 객체 기준입니다. 공개 준비 커밋 `0b04f33`을 포함한 5개 커밋도 Gitleaks로 최종 검사하여 인증정보 탐지 0건을 확인했습니다. 고유 blob 130개 및 현재 추적 파일 104개의 개인정보 패턴 검사에서도 제거 대상이 없었습니다. 작업 폴더, 가상환경, 원본 점검 로그는 공개 파일에 포함하지 않습니다. 이미지·PSD의 공개 열람과 재사용 권한은 구분하며 [사례 권리 안내](../case-studies/ASSET-RIGHTS.md)를 유지합니다.
+
+## 공개 확인과 저장소 보호
+
+2026-09-11 저장소를 PUBLIC으로 전환했습니다. 인증 헤더와 로그인 세션 없이 GitHub API·README·보안 정책·원본/한글 적용 PNG가 HTTP 200으로 열리고, 원격 main이 검토한 코드 커밋 `0b04f33`과 일치함을 확인했습니다.
+
+GitHub의 secret scanning, push protection, 비공개 취약점 제보를 켜고 API로 활성 상태를 다시 읽었습니다. 공개 저장소에서 제공되는 [무료 비밀키 탐지](https://docs.github.com/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enable-secret-scanning)와 [push protection](https://github.blog/changelog/2023-05-09-secret-scannings-push-protection-is-available-on-public-repositories-for-free/)을 사용하며 유료 보안 상품은 추가하지 않았습니다. 활성화 확인은 GitHub의 후속 전체 스캔 완료를 의미하지 않습니다.
 
 ## 발견한 문제와 수정
 

@@ -22,4 +22,4 @@ Never include credentials, private customer files, personal contact information 
 
 ## Reporting a vulnerability
 
-Use GitHub's **Security → Report a vulnerability** for a private report when available. Include the affected version, a minimal synthetic example, expected behavior and actual behavior. Do not publish credentials or private game/customer files in an issue. If private reporting is unavailable, request a private reporting channel from the repository owner without posting sensitive details.
+Private vulnerability reporting is enabled for this repository. Use [Security → Report a vulnerability](https://github.com/etehofk1-ops/layer-localization-studio/security/advisories/new). Include the affected version, a minimal synthetic example, expected behavior and actual behavior. Do not publish credentials or private game/customer files in an issue. If private reporting is unavailable, request a private reporting channel from the repository owner without posting sensitive details.
